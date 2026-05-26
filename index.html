@@ -16,29 +16,59 @@
       </header>
 
       <section class="control-panel" aria-label="练习设置">
-        <label class="field">
-          <span>年级</span>
-          <select id="grade-select"></select>
-        </label>
-        <label class="field">
-          <span>上下册</span>
-          <select id="volume-select"></select>
-        </label>
-        <label class="field">
-          <span>单元</span>
-          <select id="unit-select"></select>
-        </label>
-        <label class="field">
-          <span>模式</span>
-          <select id="mode-select"></select>
-        </label>
+        <button class="settings-trigger" id="settings-trigger" type="button">
+          <span class="summary-label">当前练习</span>
+          <strong id="settings-summary">年级 / 上册 / 单元</strong>
+          <span class="summary-action">点击更改</span>
+        </button>
       </section>
+
+      <dialog class="settings-dialog" id="settings-dialog" aria-labelledby="settings-title">
+        <div class="settings-card">
+          <header class="settings-header">
+            <div>
+              <p>练习设置</p>
+              <h2 id="settings-title">选择年级、册别和单元</h2>
+            </div>
+            <button class="icon-button" id="settings-close" type="button" aria-label="关闭设置">×</button>
+          </header>
+
+          <div class="settings-fields">
+            <label class="field">
+              <span>年级</span>
+              <select id="grade-select"></select>
+            </label>
+            <label class="field">
+              <span>册别</span>
+              <select id="volume-select"></select>
+            </label>
+            <label class="field">
+              <span>单元</span>
+              <select id="unit-select"></select>
+            </label>
+            <label class="field">
+              <span>模式</span>
+              <select id="mode-select"></select>
+            </label>
+          </div>
+
+          <button class="done-button" id="settings-done" type="button">完成</button>
+        </div>
+      </dialog>
 
       <section class="message" id="message" hidden></section>
 
       <button class="word-card" id="word-card" type="button" aria-label="点击翻转单词卡片">
-        <span class="card-face" id="card-main">加载中...</span>
-        <span class="card-hint" id="card-hint">请稍候</span>
+        <span class="card-inner">
+          <span class="card-side card-side-front">
+            <span class="card-face" id="card-front-main">加载中...</span>
+            <span class="card-hint" id="card-front-hint">请稍候</span>
+          </span>
+          <span class="card-side card-side-back">
+            <span class="card-face" id="card-back-main">Loading...</span>
+            <span class="card-hint" id="card-back-hint">请稍候</span>
+          </span>
+        </span>
       </button>
 
       <footer class="practice-actions" aria-label="单词切换">

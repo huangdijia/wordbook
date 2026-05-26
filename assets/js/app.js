@@ -15,14 +15,21 @@ const state = {
 const elements = {
   title: document.querySelector('#app-title'),
   subtitle: document.querySelector('#app-subtitle'),
+  settingsTrigger: document.querySelector('#settings-trigger'),
+  settingsSummary: document.querySelector('#settings-summary'),
+  settingsDialog: document.querySelector('#settings-dialog'),
+  settingsClose: document.querySelector('#settings-close'),
+  settingsDone: document.querySelector('#settings-done'),
   gradeSelect: document.querySelector('#grade-select'),
   volumeSelect: document.querySelector('#volume-select'),
   unitSelect: document.querySelector('#unit-select'),
   modeSelect: document.querySelector('#mode-select'),
   message: document.querySelector('#message'),
   card: document.querySelector('#word-card'),
-  cardMain: document.querySelector('#card-main'),
-  cardHint: document.querySelector('#card-hint'),
+  cardFrontMain: document.querySelector('#card-front-main'),
+  cardFrontHint: document.querySelector('#card-front-hint'),
+  cardBackMain: document.querySelector('#card-back-main'),
+  cardBackHint: document.querySelector('#card-back-hint'),
   prevButton: document.querySelector('#prev-button'),
   nextButton: document.querySelector('#next-button'),
   progress: document.querySelector('#progress')
@@ -164,8 +171,10 @@ function goToWord(index) {
 }
 
 function renderLoading() {
-  elements.cardMain.textContent = '加载中...'
-  elements.cardHint.textContent = '请稍候'
+  elements.cardFrontMain.textContent = '加载中...'
+  elements.cardFrontHint.textContent = '请稍候'
+  elements.cardBackMain.textContent = 'Loading...'
+  elements.cardBackHint.textContent = '请稍候'
   elements.progress.textContent = '0 / 0'
   elements.prevButton.disabled = true
   elements.nextButton.disabled = true
@@ -205,6 +214,17 @@ function renderControls() {
   elements.volumeSelect.disabled = disabled || volumes.length === 0
   elements.unitSelect.disabled = disabled || units.length === 0
   elements.modeSelect.disabled = disabled || getModes().length === 0
+  elements.settingsTrigger.disabled = disabled || getGrades().length === 0
+  elements.settingsSummary.textContent = getSettingsSummary()
+}
+
+function getSettingsSummary() {
+  const grade = getCurrentGrade()?.name || '年级'
+  const volume = getCurrentVolume()?.name || '上册'
+  const unit = getCurrentVolume()?.units?.find(item => item.key === state.currentUnitKey)
+  const unitLabel = unit ? `${unit.name} ${unit.title}`.trim() : '单元'
+
+  return `${grade} / ${volume} / ${unitLabel}`
 }
 
 function renderOptions(select, items, getLabel) {
@@ -244,19 +264,25 @@ function renderCard() {
   elements.card.setAttribute('aria-pressed', String(state.isFlipped))
 
   if (state.error) {
-    elements.cardMain.textContent = '加载失败'
-    elements.cardHint.textContent = '请检查数据文件'
+    elements.cardFrontMain.textContent = '加载失败'
+    elements.cardFrontHint.textContent = '请检查数据文件'
+    elements.cardBackMain.textContent = 'Error'
+    elements.cardBackHint.textContent = '请检查数据文件'
     return
   }
 
   if (!currentWord) {
-    elements.cardMain.textContent = '暂无单词'
-    elements.cardHint.textContent = '请选择其他年级或单元'
+    elements.cardFrontMain.textContent = '暂无单词'
+    elements.cardFrontHint.textContent = '请选择其他年级或单元'
+    elements.cardBackMain.textContent = 'No words'
+    elements.cardBackHint.textContent = '请选择其他年级或单元'
     return
   }
 
-  elements.cardMain.textContent = state.isFlipped ? currentWord.english : currentWord.chinese
-  elements.cardHint.textContent = state.isFlipped ? '点击返回中文' : '点击查看英文'
+  elements.cardFrontMain.textContent = currentWord.chinese
+  elements.cardFrontHint.textContent = '点击查看英文'
+  elements.cardBackMain.textContent = currentWord.english
+  elements.cardBackHint.textContent = '点击返回中文'
 }
 
 function renderActions() {
@@ -320,6 +346,32 @@ function handleNextClick() {
   }
 }
 
+function openSettingsDialog() {
+  if (elements.settingsDialog.showModal) {
+    elements.settingsDialog.showModal()
+  } else {
+    elements.settingsDialog.setAttribute('open', '')
+  }
+}
+
+function closeSettingsDialog() {
+  if (elements.settingsDialog.open && elements.settingsDialog.close) {
+    elements.settingsDialog.close()
+  } else {
+    elements.settingsDialog.removeAttribute('open')
+  }
+}
+
+function handleDialogClick(event) {
+  if (event.target === elements.settingsDialog) {
+    closeSettingsDialog()
+  }
+}
+
+elements.settingsTrigger.addEventListener('click', openSettingsDialog)
+elements.settingsClose.addEventListener('click', closeSettingsDialog)
+elements.settingsDone.addEventListener('click', closeSettingsDialog)
+elements.settingsDialog.addEventListener('click', handleDialogClick)
 elements.gradeSelect.addEventListener('change', handleGradeChange)
 elements.volumeSelect.addEventListener('change', handleVolumeChange)
 elements.unitSelect.addEventListener('change', handleUnitChange)
