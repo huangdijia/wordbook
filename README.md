@@ -91,16 +91,6 @@ python3 -m json.tool data/config.json >/dev/null
 python3 -m json.tool data/words.json >/dev/null
 ```
 
-## 部署
-
-项目是纯静态站点，可以部署到 Vercel 或任意支持站点根路径的静态托管服务。若部署到子路径，需要同步调整 `manifest.webmanifest` 和 `sw.js` 中的绝对路径。
-
-当前仓库包含 `.github/workflows/deploy-vercel.yml`，推送到 `main` 分支或手动触发 workflow 时，会通过 Vercel CLI 构建并部署生产环境。需要在 GitHub Secrets 中配置：
-
-- `VERCEL_TOKEN`
-- `VERCEL_ORG_ID`
-- `VERCEL_PROJECT_ID`
-
 ## 开发约定
 
 - 保持纯静态实现，不主动引入框架、打包器、后端或数据库。
