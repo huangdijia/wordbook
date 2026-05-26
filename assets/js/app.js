@@ -268,7 +268,7 @@ function renderAll() {
 }
 
 function renderTitle() {
-  elements.title.textContent = state.config?.app?.title || '英文单词本'
+  elements.title.textContent = state.config?.app?.title || '单词本'
   elements.subtitle.textContent = state.config?.app?.subtitle || '每天背一点，英语进步一点'
   document.title = elements.title.textContent
 }
