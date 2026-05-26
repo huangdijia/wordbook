@@ -1,3 +1,5 @@
+const practiceCookieName = 'wordbookPracticeConfig'
+
 const state = {
   config: null,
   words: [],
@@ -20,6 +22,10 @@ const elements = {
   settingsDialog: document.querySelector('#settings-dialog'),
   settingsClose: document.querySelector('#settings-close'),
   settingsDone: document.querySelector('#settings-done'),
+  completeDialog: document.querySelector('#complete-dialog'),
+  completeMessage: document.querySelector('#complete-message'),
+  stayButton: document.querySelector('#stay-button'),
+  nextUnitButton: document.querySelector('#next-unit-button'),
   gradeSelect: document.querySelector('#grade-select'),
   volumeSelect: document.querySelector('#volume-select'),
   unitSelect: document.querySelector('#unit-select'),
@@ -73,18 +79,91 @@ function applyInitialState() {
   const defaultGrade = state.config?.app?.defaultGrade
   const defaultVolume = state.config?.app?.defaultVolume
   const defaultMode = state.config?.app?.defaultMode
+  const savedPracticeConfig = getSavedPracticeConfig()
 
-  state.currentGradeKey = grades.some(grade => grade.key === defaultGrade)
-    ? defaultGrade
-    : grades[0]?.key || ''
-  state.currentVolumeKey = getCurrentGrade()?.volumes?.some(volume => volume.key === defaultVolume)
-    ? defaultVolume
-    : getCurrentGrade()?.volumes?.[0]?.key || ''
-  state.currentMode = modes.some(mode => mode.key === defaultMode)
-    ? defaultMode
-    : modes[0]?.key || 'sequence'
-  state.currentUnitKey = getCurrentVolume()?.units?.[0]?.key || ''
+  state.currentGradeKey = grades.some(grade => grade.key === savedPracticeConfig?.gradeKey)
+    ? savedPracticeConfig.gradeKey
+    : grades.some(grade => grade.key === defaultGrade)
+      ? defaultGrade
+      : grades[0]?.key || ''
+  state.currentVolumeKey = getCurrentGrade()?.volumes?.some(volume => volume.key === savedPracticeConfig?.volumeKey)
+    ? savedPracticeConfig.volumeKey
+    : getCurrentGrade()?.volumes?.some(volume => volume.key === defaultVolume)
+      ? defaultVolume
+      : getCurrentGrade()?.volumes?.[0]?.key || ''
+  state.currentMode = modes.some(mode => mode.key === savedPracticeConfig?.mode)
+    ? savedPracticeConfig.mode
+    : modes.some(mode => mode.key === defaultMode)
+      ? defaultMode
+      : modes[0]?.key || 'sequence'
+  state.currentUnitKey = getCurrentVolume()?.units?.some(unit => unit.key === savedPracticeConfig?.unitKey)
+    ? savedPracticeConfig.unitKey
+    : getCurrentVolume()?.units?.[0]?.key || ''
   resetPracticeWords()
+  savePracticeConfig()
+}
+
+function getCookie(name) {
+  return document.cookie
+    .split('; ')
+    .find(cookie => cookie.startsWith(`${name}=`))
+    ?.split('=')
+    .slice(1)
+    .join('=') || ''
+}
+
+function getSavedPracticeConfig() {
+  const cookieValue = getCookie(practiceCookieName)
+
+  if (!cookieValue) {
+    return null
+  }
+
+  try {
+    return JSON.parse(decodeURIComponent(cookieValue))
+  } catch (error) {
+    console.warn('忽略无法解析的练习配置 cookie：', error)
+    return null
+  }
+}
+
+function savePracticeConfig() {
+  const practiceConfig = {
+    gradeKey: state.currentGradeKey,
+    volumeKey: state.currentVolumeKey,
+    unitKey: state.currentUnitKey,
+    mode: state.currentMode
+  }
+
+  document.cookie = `${practiceCookieName}=${encodeURIComponent(JSON.stringify(practiceConfig))}; max-age=31536000; path=/; SameSite=Lax`
+}
+
+function getNextUnit() {
+  const units = getCurrentVolume()?.units || []
+  const currentUnitIndex = units.findIndex(unit => unit.key === state.currentUnitKey)
+
+  if (currentUnitIndex < 0 || currentUnitIndex >= units.length - 1) {
+    return null
+  }
+
+  return units[currentUnitIndex + 1]
+}
+
+function getUnitLabel(unit) {
+  return unit ? `${unit.name} ${unit.title}`.trim() : ''
+}
+
+function moveToNextUnit() {
+  const nextUnit = getNextUnit()
+
+  if (!nextUnit) {
+    return
+  }
+
+  state.currentUnitKey = nextUnit.key
+  resetPracticeWords()
+  savePracticeConfig()
+  renderAll()
 }
 
 function getGrades() {
@@ -289,11 +368,12 @@ function renderActions() {
   const total = state.currentWords.length
   const hasWord = total > 0 && !state.error
   const currentNumber = hasWord ? state.currentIndex + 1 : 0
+  const isLastWord = hasWord && state.currentIndex === total - 1
 
   elements.progress.textContent = `${currentNumber} / ${total}`
   elements.prevButton.disabled = !hasWord || state.currentIndex === 0
-  elements.nextButton.disabled = !hasWord || state.currentIndex === total - 1
-  elements.nextButton.textContent = hasWord && state.currentIndex === total - 1 ? '已完成' : '下一个'
+  elements.nextButton.disabled = !hasWord
+  elements.nextButton.textContent = isLastWord ? '已完成' : '下一个'
 }
 
 function handleGradeChange(event) {
@@ -301,6 +381,7 @@ function handleGradeChange(event) {
   state.currentVolumeKey = getCurrentGrade()?.volumes?.[0]?.key || ''
   state.currentUnitKey = getCurrentVolume()?.units?.[0]?.key || ''
   resetPracticeWords()
+  savePracticeConfig()
   renderAll()
 }
 
@@ -308,18 +389,21 @@ function handleVolumeChange(event) {
   state.currentVolumeKey = event.target.value
   state.currentUnitKey = getCurrentVolume()?.units?.[0]?.key || ''
   resetPracticeWords()
+  savePracticeConfig()
   renderAll()
 }
 
 function handleUnitChange(event) {
   state.currentUnitKey = event.target.value
   resetPracticeWords()
+  savePracticeConfig()
   renderAll()
 }
 
 function handleModeChange(event) {
   state.currentMode = event.target.value
   resetPracticeWords()
+  savePracticeConfig()
   renderAll()
 }
 
@@ -343,6 +427,48 @@ function handleNextClick() {
   if (state.currentIndex < state.currentWords.length - 1) {
     goToWord(state.currentIndex + 1)
     renderAll()
+    return
+  }
+
+  if (state.currentWords.length > 0) {
+    openCompleteDialog()
+  }
+}
+
+function openCompleteDialog() {
+  const nextUnit = getNextUnit()
+
+  if (nextUnit) {
+    elements.completeMessage.textContent = `要进入 ${getUnitLabel(nextUnit)} 继续练习吗？`
+    elements.nextUnitButton.hidden = false
+  } else {
+    elements.completeMessage.textContent = '当前已经是本册最后一个单元。'
+    elements.nextUnitButton.hidden = true
+  }
+
+  if (elements.completeDialog.showModal) {
+    elements.completeDialog.showModal()
+  } else {
+    elements.completeDialog.setAttribute('open', '')
+  }
+}
+
+function closeCompleteDialog() {
+  if (elements.completeDialog.open && elements.completeDialog.close) {
+    elements.completeDialog.close()
+  } else {
+    elements.completeDialog.removeAttribute('open')
+  }
+}
+
+function handleNextUnitClick() {
+  closeCompleteDialog()
+  moveToNextUnit()
+}
+
+function handleCompleteDialogClick(event) {
+  if (event.target === elements.completeDialog) {
+    closeCompleteDialog()
   }
 }
 
@@ -372,6 +498,9 @@ elements.settingsTrigger.addEventListener('click', openSettingsDialog)
 elements.settingsClose.addEventListener('click', closeSettingsDialog)
 elements.settingsDone.addEventListener('click', closeSettingsDialog)
 elements.settingsDialog.addEventListener('click', handleDialogClick)
+elements.stayButton.addEventListener('click', closeCompleteDialog)
+elements.nextUnitButton.addEventListener('click', handleNextUnitClick)
+elements.completeDialog.addEventListener('click', handleCompleteDialogClick)
 elements.gradeSelect.addEventListener('change', handleGradeChange)
 elements.volumeSelect.addEventListener('change', handleVolumeChange)
 elements.unitSelect.addEventListener('change', handleUnitChange)
@@ -379,5 +508,13 @@ elements.modeSelect.addEventListener('change', handleModeChange)
 elements.card.addEventListener('click', handleCardClick)
 elements.prevButton.addEventListener('click', handlePrevClick)
 elements.nextButton.addEventListener('click', handleNextClick)
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js').catch(error => {
+      console.warn('Service worker 注册失败：', error)
+    })
+  })
+}
 
 init()

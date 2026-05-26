@@ -3,7 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#8bd7c1" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="单词本" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <title>英文单词本</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="assets/icons/icon-192.png" />
+    <link rel="apple-touch-icon" href="assets/icons/icon-192.png" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <script src="assets/js/app.js" defer></script>
   </head>
@@ -53,6 +61,17 @@
           </div>
 
           <button class="done-button" id="settings-done" type="button">完成</button>
+        </div>
+      </dialog>
+
+      <dialog class="complete-dialog" id="complete-dialog" aria-labelledby="complete-title">
+        <div class="complete-card">
+          <h2 id="complete-title">本单元练习完成啦！</h2>
+          <p id="complete-message">要进入下一单元继续练习吗？</p>
+          <div class="complete-actions">
+            <button class="secondary-button" id="stay-button" type="button">留在当前单元</button>
+            <button class="primary-button" id="next-unit-button" type="button">进入下一单元</button>
+          </div>
         </div>
       </dialog>
 

@@ -152,7 +152,8 @@ h1 {
   white-space: nowrap;
 }
 
-.settings-dialog {
+.settings-dialog,
+.complete-dialog {
   width: min(calc(100vw - 32px), 560px);
   border: 0;
   border-radius: 28px;
@@ -161,17 +162,66 @@ h1 {
   color: var(--ink);
 }
 
-.settings-dialog::backdrop {
+.settings-dialog::backdrop,
+.complete-dialog::backdrop {
   background: rgba(37, 49, 77, 0.36);
   backdrop-filter: blur(5px);
 }
 
-.settings-card {
+.settings-card,
+.complete-card {
   padding: 20px;
   border: 3px solid rgba(255, 255, 255, 0.82);
   border-radius: 28px;
   background: rgba(255, 250, 240, 0.96);
   box-shadow: var(--shadow);
+}
+
+.complete-card {
+  text-align: center;
+}
+
+.complete-card h2 {
+  margin: 0;
+  font-size: clamp(1.55rem, 6vw, 2rem);
+}
+
+.complete-card p {
+  margin: 10px 0 18px;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.complete-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.primary-button,
+.secondary-button {
+  min-height: 48px;
+  border: 0;
+  border-radius: 18px;
+  color: #1f2a44;
+  cursor: pointer;
+}
+
+.primary-button {
+  background: var(--mint);
+  box-shadow: 0 8px 18px rgba(56, 146, 122, 0.2);
+}
+
+.secondary-button {
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.primary-button[hidden] {
+  display: none;
+}
+
+.complete-actions:has(.primary-button[hidden]) {
+  grid-template-columns: 1fr;
 }
 
 .settings-header {
@@ -435,6 +485,14 @@ button:focus-visible {
 
   .settings-card {
     padding: 18px;
+  }
+
+  .complete-card {
+    padding: 18px;
+  }
+
+  .complete-actions {
+    grid-template-columns: 1fr;
   }
 
   .settings-fields {
