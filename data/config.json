@@ -1,0 +1,829 @@
+{
+  "app": {
+    "title": "英文单词本",
+    "subtitle": "沪教版（深圳）一至六年级单词卡片",
+    "defaultGrade": "grade1",
+    "defaultVolume": "upper",
+    "defaultMode": "sequence"
+  },
+  "modes": [
+    {
+      "key": "sequence",
+      "name": "顺序模式"
+    },
+    {
+      "key": "random",
+      "name": "随机模式"
+    }
+  ],
+  "grades": [
+    {
+      "key": "grade1",
+      "name": "一年级",
+      "volumes": [
+        {
+          "key": "upper",
+          "name": "上册",
+          "units": [
+            {
+              "key": "unit1",
+              "name": "Unit 1",
+              "title": "Hello"
+            },
+            {
+              "key": "unit2",
+              "name": "Unit 2",
+              "title": "My classmates"
+            },
+            {
+              "key": "unit3",
+              "name": "Unit 3",
+              "title": "My face"
+            },
+            {
+              "key": "unit4",
+              "name": "Unit 4",
+              "title": "I can sing"
+            },
+            {
+              "key": "unit5",
+              "name": "Unit 5",
+              "title": "My family"
+            },
+            {
+              "key": "unit6",
+              "name": "Unit 6",
+              "title": "My friends"
+            },
+            {
+              "key": "unit7",
+              "name": "Unit 7",
+              "title": "Let's count"
+            },
+            {
+              "key": "unit8",
+              "name": "Unit 8",
+              "title": "Apples, please"
+            },
+            {
+              "key": "unit9",
+              "name": "Unit 9",
+              "title": "May I have a pie?"
+            },
+            {
+              "key": "unit10",
+              "name": "Unit 10",
+              "title": "On the farm"
+            },
+            {
+              "key": "unit11",
+              "name": "Unit 11",
+              "title": "In the zoo"
+            },
+            {
+              "key": "unit12",
+              "name": "Unit 12",
+              "title": "In the park"
+            }
+          ]
+        },
+        {
+          "key": "lower",
+          "name": "下册",
+          "units": [
+            {
+              "key": "unit1",
+              "name": "Unit 1",
+              "title": "Look and see"
+            },
+            {
+              "key": "unit2",
+              "name": "Unit 2",
+              "title": "Listen and hear"
+            },
+            {
+              "key": "unit3",
+              "name": "Unit 3",
+              "title": "Taste and smell"
+            },
+            {
+              "key": "unit4",
+              "name": "Unit 4",
+              "title": "Toys I like"
+            },
+            {
+              "key": "unit5",
+              "name": "Unit 5",
+              "title": "Food I like"
+            },
+            {
+              "key": "unit6",
+              "name": "Unit 6",
+              "title": "Drinks I like"
+            },
+            {
+              "key": "unit7",
+              "name": "Unit 7",
+              "title": "Seasons"
+            },
+            {
+              "key": "unit8",
+              "name": "Unit 8",
+              "title": "Weather"
+            },
+            {
+              "key": "unit9",
+              "name": "Unit 9",
+              "title": "Clothes"
+            },
+            {
+              "key": "unit10",
+              "name": "Unit 10",
+              "title": "Activities"
+            },
+            {
+              "key": "unit11",
+              "name": "Unit 11",
+              "title": "New Year's Day"
+            },
+            {
+              "key": "unit12",
+              "name": "Unit 12",
+              "title": "A boy and a wolf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "grade2",
+      "name": "二年级",
+      "volumes": [
+        {
+          "key": "upper",
+          "name": "上册",
+          "units": [
+            {
+              "key": "unit1",
+              "name": "Unit 1",
+              "title": "Good morning"
+            },
+            {
+              "key": "unit2",
+              "name": "Unit 2",
+              "title": "I'm Danny"
+            },
+            {
+              "key": "unit3",
+              "name": "Unit 3",
+              "title": "Are you Alice?"
+            },
+            {
+              "key": "unit4",
+              "name": "Unit 4",
+              "title": "Can you swim?"
+            },
+            {
+              "key": "unit5",
+              "name": "Unit 5",
+              "title": "That's my family"
+            },
+            {
+              "key": "unit6",
+              "name": "Unit 6",
+              "title": "My hair is short"
+            },
+            {
+              "key": "unit7",
+              "name": "Unit 7",
+              "title": "In the playground"
+            },
+            {
+              "key": "unit8",
+              "name": "Unit 8",
+              "title": "In my room"
+            },
+            {
+              "key": "unit9",
+              "name": "Unit 9",
+              "title": "Dinner is ready"
+            },
+            {
+              "key": "unit10",
+              "name": "Unit 10",
+              "title": "In the sky"
+            },
+            {
+              "key": "unit11",
+              "name": "Unit 11",
+              "title": "In the forest"
+            },
+            {
+              "key": "unit12",
+              "name": "Unit 12",
+              "title": "In the street"
+            }
+          ]
+        },
+        {
+          "key": "lower",
+          "name": "下册",
+          "units": [
+            {
+              "key": "unit1",
+              "name": "Unit 1",
+              "title": "What can you see?"
+            },
+            {
+              "key": "unit2",
+              "name": "Unit 2",
+              "title": "Touch and feel"
+            },
+            {
+              "key": "unit3",
+              "name": "Unit 3",
+              "title": "Can you hear a train?"
+            },
+            {
+              "key": "unit4",
+              "name": "Unit 4",
+              "title": "Things I like doing"
+            },
+            {
+              "key": "unit5",
+              "name": "Unit 5",
+              "title": "Food I like"
+            },
+            {
+              "key": "unit6",
+              "name": "Unit 6",
+              "title": "Animals I like"
+            },
+            {
+              "key": "unit7",
+              "name": "Unit 7",
+              "title": "The four seasons"
+            },
+            {
+              "key": "unit8",
+              "name": "Unit 8",
+              "title": "Traffic rules"
+            },
+            {
+              "key": "unit9",
+              "name": "Unit 9",
+              "title": "My clothes"
+            },
+            {
+              "key": "unit10",
+              "name": "Unit 10",
+              "title": "Activities"
+            },
+            {
+              "key": "unit11",
+              "name": "Unit 11",
+              "title": "Teachers' Day"
+            },
+            {
+              "key": "unit12",
+              "name": "Unit 12",
+              "title": "A girl and three bears"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "grade3",
+      "name": "三年级",
+      "volumes": [
+        {
+          "key": "upper",
+          "name": "上册",
+          "units": [
+            {
+              "key": "unit1",
+              "name": "Unit 1",
+              "title": "How do we feel?"
+            },
+            {
+              "key": "unit2",
+              "name": "Unit 2",
+              "title": "What's interesting about families?"
+            },
+            {
+              "key": "unit3",
+              "name": "Unit 3",
+              "title": "What do we look like?"
+            },
+            {
+              "key": "unit4",
+              "name": "Unit 4",
+              "title": "How do we have fun?"
+            },
+            {
+              "key": "unit5",
+              "name": "Unit 5",
+              "title": "What do we eat?"
+            },
+            {
+              "key": "unit6",
+              "name": "Unit 6",
+              "title": "What do we like about small animals?"
+            },
+            {
+              "key": "unit7",
+              "name": "Unit 7",
+              "title": "What do we know about weather?"
+            },
+            {
+              "key": "unit8",
+              "name": "Unit 8",
+              "title": "Why do we like birthdays?"
+            }
+          ]
+        },
+        {
+          "key": "lower",
+          "name": "下册",
+          "units": [
+            {
+              "key": "unit1",
+              "name": "Unit 1",
+              "title": "Hello"
+            },
+            {
+              "key": "unit2",
+              "name": "Unit 2",
+              "title": "How are you?"
+            },
+            {
+              "key": "unit3",
+              "name": "Unit 3",
+              "title": "Are you Kitty?"
+            },
+            {
+              "key": "unit4",
+              "name": "Unit 4",
+              "title": "My friends"
+            },
+            {
+              "key": "unit5",
+              "name": "Unit 5",
+              "title": "My family"
+            },
+            {
+              "key": "unit6",
+              "name": "Unit 6",
+              "title": "Me"
+            },
+            {
+              "key": "unit7",
+              "name": "Unit 7",
+              "title": "In the classroom"
+            },
+            {
+              "key": "unit8",
+              "name": "Unit 8",
+              "title": "At the fruit shop"
+            },
+            {
+              "key": "unit9",
+              "name": "Unit 9",
+              "title": "In my room"
+            },
+            {
+              "key": "unit10",
+              "name": "Unit 10",
+              "title": "Numbers"
+            },
+            {
+              "key": "unit11",
+              "name": "Unit 11",
+              "title": "Small animals"
+            },
+            {
+              "key": "unit12",
+              "name": "Unit 12",
+              "title": "The four seasons"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "grade4",
+      "name": "四年级",
+      "volumes": [
+        {
+          "key": "upper",
+          "name": "上册",
+          "units": [
+            {
+              "key": "unit1",
+              "name": "Unit 1",
+              "title": "Meeting new people"
+            },
+            {
+              "key": "unit2",
+              "name": "Unit 2",
+              "title": "Can you swim?"
+            },
+            {
+              "key": "unit3",
+              "name": "Unit 3",
+              "title": "Are you happy?"
+            },
+            {
+              "key": "unit4",
+              "name": "Unit 4",
+              "title": "Do you have any cousins?"
+            },
+            {
+              "key": "unit5",
+              "name": "Unit 5",
+              "title": "My friends"
+            },
+            {
+              "key": "unit6",
+              "name": "Unit 6",
+              "title": "My parents"
+            },
+            {
+              "key": "unit7",
+              "name": "Unit 7",
+              "title": "At school"
+            },
+            {
+              "key": "unit8",
+              "name": "Unit 8",
+              "title": "At the shop"
+            },
+            {
+              "key": "unit9",
+              "name": "Unit 9",
+              "title": "At home"
+            },
+            {
+              "key": "unit10",
+              "name": "Unit 10",
+              "title": "Around my home"
+            },
+            {
+              "key": "unit11",
+              "name": "Unit 11",
+              "title": "Shapes"
+            },
+            {
+              "key": "unit12",
+              "name": "Unit 12",
+              "title": "Weather"
+            }
+          ]
+        },
+        {
+          "key": "lower",
+          "name": "下册",
+          "units": [
+            {
+              "key": "unit1",
+              "name": "Unit 1",
+              "title": "touch and feel"
+            },
+            {
+              "key": "unit2",
+              "name": "Unit 2",
+              "title": "smell and taste"
+            },
+            {
+              "key": "unit3",
+              "name": "Unit 3",
+              "title": "look and see"
+            },
+            {
+              "key": "unit4",
+              "name": "Unit 4",
+              "title": "subjects"
+            },
+            {
+              "key": "unit5",
+              "name": "Unit 5",
+              "title": "sport"
+            },
+            {
+              "key": "unit6",
+              "name": "Unit 6",
+              "title": "music"
+            },
+            {
+              "key": "unit7",
+              "name": "Unit 7",
+              "title": "my day"
+            },
+            {
+              "key": "unit8",
+              "name": "Unit 8",
+              "title": "days of the week"
+            },
+            {
+              "key": "unit9",
+              "name": "Unit 9",
+              "title": "a friend in australia"
+            },
+            {
+              "key": "unit10",
+              "name": "Unit 10",
+              "title": "my garden"
+            },
+            {
+              "key": "unit11",
+              "name": "Unit 11",
+              "title": "children's day"
+            },
+            {
+              "key": "unit12",
+              "name": "Unit 12",
+              "title": "the ugly duckling"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "grade5",
+      "name": "五年级",
+      "volumes": [
+        {
+          "key": "upper",
+          "name": "上册",
+          "units": [
+            {
+              "key": "unit1",
+              "name": "Unit 1",
+              "title": "my future"
+            },
+            {
+              "key": "unit2",
+              "name": "Unit 2",
+              "title": "going to school"
+            },
+            {
+              "key": "unit3",
+              "name": "Unit 3",
+              "title": "my birthday"
+            },
+            {
+              "key": "unit4",
+              "name": "Unit 4",
+              "title": "grandparents"
+            },
+            {
+              "key": "unit5",
+              "name": "Unit 5",
+              "title": "friends"
+            },
+            {
+              "key": "unit6",
+              "name": "Unit 6",
+              "title": "family life"
+            },
+            {
+              "key": "unit7",
+              "name": "Unit 7",
+              "title": "at the beach"
+            },
+            {
+              "key": "unit8",
+              "name": "Unit 8",
+              "title": "at outing"
+            },
+            {
+              "key": "unit9",
+              "name": "Unit 9",
+              "title": "around the city"
+            },
+            {
+              "key": "unit10",
+              "name": "Unit 10",
+              "title": "wind"
+            },
+            {
+              "key": "unit11",
+              "name": "Unit 11",
+              "title": "water"
+            },
+            {
+              "key": "unit12",
+              "name": "Unit 12",
+              "title": "fire"
+            }
+          ]
+        },
+        {
+          "key": "lower",
+          "name": "下册",
+          "units": [
+            {
+              "key": "unit1",
+              "name": "Unit 1",
+              "title": "tidy up!"
+            },
+            {
+              "key": "unit2",
+              "name": "Unit 2",
+              "title": "our new home"
+            },
+            {
+              "key": "unit3",
+              "name": "Unit 3",
+              "title": "in the future"
+            },
+            {
+              "key": "unit4",
+              "name": "Unit 4",
+              "title": "reading is fun"
+            },
+            {
+              "key": "unit5",
+              "name": "Unit 5",
+              "title": "at the weekend"
+            },
+            {
+              "key": "unit6",
+              "name": "Unit 6",
+              "title": "holiday"
+            },
+            {
+              "key": "unit7",
+              "name": "Unit 7",
+              "title": "open day"
+            },
+            {
+              "key": "unit8",
+              "name": "Unit 8",
+              "title": "buying clothes"
+            },
+            {
+              "key": "unit9",
+              "name": "Unit 9",
+              "title": "seeing the doctor"
+            },
+            {
+              "key": "unit10",
+              "name": "Unit 10",
+              "title": "great inventions"
+            },
+            {
+              "key": "unit11",
+              "name": "Unit 11",
+              "title": "chinese festival"
+            },
+            {
+              "key": "unit12",
+              "name": "Unit 12",
+              "title": "the giant's garden"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "grade6",
+      "name": "六年级",
+      "volumes": [
+        {
+          "key": "upper",
+          "name": "上册",
+          "units": [
+            {
+              "key": "unit1",
+              "name": "Unit 1",
+              "title": "growing up"
+            },
+            {
+              "key": "unit2",
+              "name": "Unit 2",
+              "title": "my summer holiday"
+            },
+            {
+              "key": "unit3",
+              "name": "Unit 3",
+              "title": "healthy or unhealthy"
+            },
+            {
+              "key": "unit4",
+              "name": "Unit 4",
+              "title": "our neighbour"
+            },
+            {
+              "key": "unit5",
+              "name": "Unit 5",
+              "title": "animals in danger"
+            },
+            {
+              "key": "unit6",
+              "name": "Unit 6",
+              "title": "e-friends"
+            },
+            {
+              "key": "unit7",
+              "name": "Unit 7",
+              "title": "seeing a film"
+            },
+            {
+              "key": "unit8",
+              "name": "Unit 8",
+              "title": "visiting museums"
+            },
+            {
+              "key": "unit9",
+              "name": "Unit 9",
+              "title": "great cities of the world"
+            },
+            {
+              "key": "unit10",
+              "name": "Unit 10",
+              "title": "air"
+            },
+            {
+              "key": "unit11",
+              "name": "Unit 11",
+              "title": "trees"
+            },
+            {
+              "key": "unit12",
+              "name": "Unit 12",
+              "title": "the earth"
+            }
+          ]
+        },
+        {
+          "key": "lower",
+          "name": "下册",
+          "units": [
+            {
+              "key": "unit1",
+              "name": "Unit 1",
+              "title": "you and me"
+            },
+            {
+              "key": "unit2",
+              "name": "Unit 2",
+              "title": "changes in our lives"
+            },
+            {
+              "key": "unit3",
+              "name": "Unit 3",
+              "title": "our school in the future"
+            },
+            {
+              "key": "unit4",
+              "name": "Unit 4",
+              "title": "art"
+            },
+            {
+              "key": "unit5",
+              "name": "Unit 5",
+              "title": "crafts"
+            },
+            {
+              "key": "unit6",
+              "name": "Unit 6",
+              "title": "pe lessons"
+            },
+            {
+              "key": "unit7",
+              "name": "Unit 7",
+              "title": "helping others"
+            },
+            {
+              "key": "unit8",
+              "name": "Unit 8",
+              "title": "reading signs"
+            },
+            {
+              "key": "unit9",
+              "name": "Unit 9",
+              "title": "reusing things"
+            },
+            {
+              "key": "unit10",
+              "name": "Unit 10",
+              "title": "great storybooks"
+            },
+            {
+              "key": "unit11",
+              "name": "Unit 11",
+              "title": "western festivals"
+            },
+            {
+              "key": "unit12",
+              "name": "Unit 12",
+              "title": "the five peas"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

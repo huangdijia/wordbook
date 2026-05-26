@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>英文单词本</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/app.js" defer></script>
+  </head>
+  <body>
+    <main class="app-shell" aria-live="polite">
+      <header class="hero">
+        <p class="eyebrow">Wordbook</p>
+        <h1 id="app-title">英文单词本</h1>
+        <p id="app-subtitle">每天背一点，英语进步一点</p>
+      </header>
+
+      <section class="control-panel" aria-label="练习设置">
+        <label class="field">
+          <span>年级</span>
+          <select id="grade-select"></select>
+        </label>
+        <label class="field">
+          <span>上下册</span>
+          <select id="volume-select"></select>
+        </label>
+        <label class="field">
+          <span>单元</span>
+          <select id="unit-select"></select>
+        </label>
+        <label class="field">
+          <span>模式</span>
+          <select id="mode-select"></select>
+        </label>
+      </section>
+
+      <section class="message" id="message" hidden></section>
+
+      <button class="word-card" id="word-card" type="button" aria-label="点击翻转单词卡片">
+        <span class="card-face" id="card-main">加载中...</span>
+        <span class="card-hint" id="card-hint">请稍候</span>
+      </button>
+
+      <footer class="practice-actions" aria-label="单词切换">
+        <button class="nav-button" id="prev-button" type="button">上一个</button>
+        <strong class="progress" id="progress">0 / 0</strong>
+        <button class="nav-button" id="next-button" type="button">下一个</button>
+      </footer>
+    </main>
+  </body>
+</html>
