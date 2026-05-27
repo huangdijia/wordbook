@@ -1,0 +1,954 @@
+[
+  {
+    "id": "g4-upper-u01-001",
+    "unitKey": "unit1",
+    "chinese": "相识；结识",
+    "english": "meet",
+    "sort": 1
+  },
+  {
+    "id": "g4-upper-u01-002",
+    "unitKey": "unit1",
+    "chinese": "新的",
+    "english": "new",
+    "sort": 2
+  },
+  {
+    "id": "g4-upper-u01-003",
+    "unitKey": "unit1",
+    "chinese": "早晨，上午",
+    "english": "morning",
+    "sort": 3
+  },
+  {
+    "id": "g4-upper-u01-004",
+    "unitKey": "unit1",
+    "chinese": "同班同学",
+    "english": "classmate",
+    "sort": 4
+  },
+  {
+    "id": "g4-upper-u01-005",
+    "unitKey": "unit1",
+    "chinese": "她的",
+    "english": "her",
+    "sort": 5
+  },
+  {
+    "id": "g4-upper-u01-006",
+    "unitKey": "unit1",
+    "chinese": "名字",
+    "english": "name",
+    "sort": 6
+  },
+  {
+    "id": "g4-upper-u01-007",
+    "unitKey": "unit1",
+    "chinese": "坐",
+    "english": "sit",
+    "sort": 7
+  },
+  {
+    "id": "g4-upper-u01-008",
+    "unitKey": "unit1",
+    "chinese": "下午",
+    "english": "afternoon",
+    "sort": 8
+  },
+  {
+    "id": "g4-upper-u01-009",
+    "unitKey": "unit1",
+    "chinese": "他的",
+    "english": "his",
+    "sort": 9
+  },
+  {
+    "id": "g4-upper-u02-001",
+    "unitKey": "unit2",
+    "chinese": "跑",
+    "english": "run",
+    "sort": 1
+  },
+  {
+    "id": "g4-upper-u02-002",
+    "unitKey": "unit2",
+    "chinese": "快的 adv. 快地；快速地...",
+    "english": "fast",
+    "sort": 2
+  },
+  {
+    "id": "g4-upper-u02-003",
+    "unitKey": "unit2",
+    "chinese": "飞；放飞",
+    "english": "fly",
+    "sort": 3
+  },
+  {
+    "id": "g4-upper-u02-004",
+    "unitKey": "unit2",
+    "chinese": "画画",
+    "english": "draw",
+    "sort": 4
+  },
+  {
+    "id": "g4-upper-u02-005",
+    "unitKey": "unit2",
+    "chinese": "写字；书写",
+    "english": "write",
+    "sort": 5
+  },
+  {
+    "id": "g4-upper-u02-006",
+    "unitKey": "unit2",
+    "chinese": "跳",
+    "english": "jump",
+    "sort": 6
+  },
+  {
+    "id": "g4-upper-u02-007",
+    "unitKey": "unit2",
+    "chinese": "欢迎",
+    "english": "welcome",
+    "sort": 7
+  },
+  {
+    "id": "g4-upper-u02-008",
+    "unitKey": "unit2",
+    "chinese": "(狗叫声)汪汪",
+    "english": "woof",
+    "sort": 8
+  },
+  {
+    "id": "g4-upper-u02-009",
+    "unitKey": "unit2",
+    "chinese": "但是",
+    "english": "but",
+    "sort": 9
+  },
+  {
+    "id": "g4-upper-u03-001",
+    "unitKey": "unit3",
+    "chinese": "开心的",
+    "english": "happy",
+    "sort": 1
+  },
+  {
+    "id": "g4-upper-u03-002",
+    "unitKey": "unit3",
+    "chinese": "难过的；悲哀的",
+    "english": "sad",
+    "sort": 2
+  },
+  {
+    "id": "g4-upper-u03-003",
+    "unitKey": "unit3",
+    "chinese": "累的，疲倦的",
+    "english": "tired",
+    "sort": 3
+  },
+  {
+    "id": "g4-upper-u03-004",
+    "unitKey": "unit3",
+    "chinese": "饥饿的",
+    "english": "hungry",
+    "sort": 4
+  },
+  {
+    "id": "g4-upper-u03-005",
+    "unitKey": "unit3",
+    "chinese": "饱的",
+    "english": "full",
+    "sort": 5
+  },
+  {
+    "id": "g4-upper-u03-006",
+    "unitKey": "unit3",
+    "chinese": "口渴的",
+    "english": "thirsty",
+    "sort": 6
+  },
+  {
+    "id": "g4-upper-u03-007",
+    "unitKey": "unit3",
+    "chinese": "鸟",
+    "english": "bird",
+    "sort": 7
+  },
+  {
+    "id": "g4-upper-u03-008",
+    "unitKey": "unit3",
+    "chinese": "看见",
+    "english": "see",
+    "sort": 8
+  },
+  {
+    "id": "g4-upper-u03-009",
+    "unitKey": "unit3",
+    "chinese": "瓶子",
+    "english": "bottle",
+    "sort": 9
+  },
+  {
+    "id": "g4-upper-u03-010",
+    "unitKey": "unit3",
+    "chinese": "喝",
+    "english": "drink",
+    "sort": 10
+  },
+  {
+    "id": "g4-upper-u04-001",
+    "unitKey": "unit4",
+    "chinese": "任何的",
+    "english": "any",
+    "sort": 1
+  },
+  {
+    "id": "g4-upper-u04-002",
+    "unitKey": "unit4",
+    "chinese": "表兄弟；表姐妹；堂兄弟；堂...",
+    "english": "cousin",
+    "sort": 2
+  },
+  {
+    "id": "g4-upper-u04-003",
+    "unitKey": "unit4",
+    "chinese": "家庭",
+    "english": "family",
+    "sort": 3
+  },
+  {
+    "id": "g4-upper-u04-004",
+    "unitKey": "unit4",
+    "chinese": "父亲；母亲",
+    "english": "parent",
+    "sort": 4
+  },
+  {
+    "id": "g4-upper-u04-005",
+    "unitKey": "unit4",
+    "chinese": "(外)祖父；(外)祖母",
+    "english": "grandparent",
+    "sort": 5
+  },
+  {
+    "id": "g4-upper-u04-006",
+    "unitKey": "unit4",
+    "chinese": "儿子",
+    "english": "son",
+    "sort": 6
+  },
+  {
+    "id": "g4-upper-u04-007",
+    "unitKey": "unit4",
+    "chinese": "(外)祖父；爷爷；外公 ...",
+    "english": "grandfather",
+    "sort": 7
+  },
+  {
+    "id": "g4-upper-u04-008",
+    "unitKey": "unit4",
+    "chinese": "(外)祖母；奶奶；外婆 ...",
+    "english": "grandmother",
+    "sort": 8
+  },
+  {
+    "id": "g4-upper-u04-009",
+    "unitKey": "unit4",
+    "chinese": "叔叔；伯伯；舅舅；姑父；姨...",
+    "english": "uncle",
+    "sort": 9
+  },
+  {
+    "id": "g4-upper-u04-010",
+    "unitKey": "unit4",
+    "chinese": "婶婶；伯母；舅妈；姑妈；姨...",
+    "english": "aunt",
+    "sort": 10
+  },
+  {
+    "id": "g4-upper-u04-011",
+    "unitKey": "unit4",
+    "chinese": "那个",
+    "english": "that",
+    "sort": 11
+  },
+  {
+    "id": "g4-upper-u05-001",
+    "unitKey": "unit5",
+    "chinese": "T恤衫",
+    "english": "T-shirt",
+    "sort": 1
+  },
+  {
+    "id": "g4-upper-u05-002",
+    "unitKey": "unit5",
+    "chinese": "棕色的 n. 棕色",
+    "english": "brown",
+    "sort": 2
+  },
+  {
+    "id": "g4-upper-u05-003",
+    "unitKey": "unit5",
+    "chinese": "短裤",
+    "english": "shorts",
+    "sort": 3
+  },
+  {
+    "id": "g4-upper-u05-004",
+    "unitKey": "unit5",
+    "chinese": "骑(马；自行车)",
+    "english": "ride",
+    "sort": 4
+  },
+  {
+    "id": "g4-upper-u05-005",
+    "unitKey": "unit5",
+    "chinese": "短裙",
+    "english": "skirt",
+    "sort": 5
+  },
+  {
+    "id": "g4-upper-u05-006",
+    "unitKey": "unit5",
+    "chinese": "连衣裙",
+    "english": "dress",
+    "sort": 6
+  },
+  {
+    "id": "g4-upper-u05-007",
+    "unitKey": "unit5",
+    "chinese": "(男式)衬衫",
+    "english": "shirt",
+    "sort": 7
+  },
+  {
+    "id": "g4-upper-u05-008",
+    "unitKey": "unit5",
+    "chinese": "牙齿(复数teeth)",
+    "english": "tooth",
+    "sort": 8
+  },
+  {
+    "id": "g4-upper-u05-009",
+    "unitKey": "unit5",
+    "chinese": "锋利的；尖的",
+    "english": "sharp",
+    "sort": 9
+  },
+  {
+    "id": "g4-upper-u05-010",
+    "unitKey": "unit5",
+    "chinese": "帮助",
+    "english": "help",
+    "sort": 10
+  },
+  {
+    "id": "g4-upper-u05-011",
+    "unitKey": "unit5",
+    "chinese": "一条；一副；一双",
+    "english": "a pair of",
+    "sort": 11
+  },
+  {
+    "id": "g4-upper-u05-012",
+    "unitKey": "unit5",
+    "chinese": "出去",
+    "english": "get out",
+    "sort": 12
+  },
+  {
+    "id": "g4-upper-u06-001",
+    "unitKey": "unit6",
+    "chinese": "护士",
+    "english": "nurse",
+    "sort": 1
+  },
+  {
+    "id": "g4-upper-u06-002",
+    "unitKey": "unit6",
+    "chinese": "消防员(复数firemen)",
+    "english": "fireman",
+    "sort": 2
+  },
+  {
+    "id": "g4-upper-u06-003",
+    "unitKey": "unit6",
+    "chinese": "老师",
+    "english": "teacher",
+    "sort": 3
+  },
+  {
+    "id": "g4-upper-u06-004",
+    "unitKey": "unit6",
+    "chinese": "医生",
+    "english": "doctor",
+    "sort": 4
+  },
+  {
+    "id": "g4-upper-u06-005",
+    "unitKey": "unit6",
+    "chinese": "公共汽车司机",
+    "english": "bus driver",
+    "sort": 5
+  },
+  {
+    "id": "g4-upper-u06-006",
+    "unitKey": "unit6",
+    "chinese": "小孩",
+    "english": "kid",
+    "sort": 6
+  },
+  {
+    "id": "g4-upper-u06-007",
+    "unitKey": "unit6",
+    "chinese": "如此；很；所以",
+    "english": "so",
+    "sort": 7
+  },
+  {
+    "id": "g4-upper-u06-008",
+    "unitKey": "unit6",
+    "chinese": "火；火灾",
+    "english": "fire",
+    "sort": 8
+  },
+  {
+    "id": "g4-upper-u06-009",
+    "unitKey": "unit6",
+    "chinese": "人；人们",
+    "english": "people",
+    "sort": 9
+  },
+  {
+    "id": "g4-upper-u06-010",
+    "unitKey": "unit6",
+    "chinese": "工作；职业",
+    "english": "job",
+    "sort": 10
+  },
+  {
+    "id": "g4-upper-u06-011",
+    "unitKey": "unit6",
+    "chinese": "玩……",
+    "english": "play with",
+    "sort": 11
+  },
+  {
+    "id": "g4-upper-u07-001",
+    "unitKey": "unit7",
+    "chinese": "学校",
+    "english": "school",
+    "sort": 1
+  },
+  {
+    "id": "g4-upper-u07-002",
+    "unitKey": "unit7",
+    "chinese": "办公室",
+    "english": "office",
+    "sort": 2
+  },
+  {
+    "id": "g4-upper-u07-003",
+    "unitKey": "unit7",
+    "chinese": "忙碌的；繁忙的",
+    "english": "busy",
+    "sort": 3
+  },
+  {
+    "id": "g4-upper-u07-004",
+    "unitKey": "unit7",
+    "chinese": "计算机；电脑",
+    "english": "computer",
+    "sort": 4
+  },
+  {
+    "id": "g4-upper-u07-005",
+    "unitKey": "unit7",
+    "chinese": "许多",
+    "english": "many",
+    "sort": 5
+  },
+  {
+    "id": "g4-upper-u07-006",
+    "unitKey": "unit7",
+    "chinese": "图书馆；图书室",
+    "english": "library",
+    "sort": 6
+  },
+  {
+    "id": "g4-upper-u07-007",
+    "unitKey": "unit7",
+    "chinese": "操场",
+    "english": "playground",
+    "sort": 7
+  },
+  {
+    "id": "g4-upper-u07-008",
+    "unitKey": "unit7",
+    "chinese": "教室",
+    "english": "classroom",
+    "sort": 8
+  },
+  {
+    "id": "g4-upper-u07-009",
+    "unitKey": "unit7",
+    "chinese": "厕所",
+    "english": "toilet",
+    "sort": 9
+  },
+  {
+    "id": "g4-upper-u07-010",
+    "unitKey": "unit7",
+    "chinese": "动物",
+    "english": "animal",
+    "sort": 10
+  },
+  {
+    "id": "g4-upper-u07-011",
+    "unitKey": "unit7",
+    "chinese": "森林",
+    "english": "forest",
+    "sort": 11
+  },
+  {
+    "id": "g4-upper-u07-012",
+    "unitKey": "unit7",
+    "chinese": "小学生",
+    "english": "pupil",
+    "sort": 12
+  },
+  {
+    "id": "g4-upper-u07-013",
+    "unitKey": "unit7",
+    "chinese": "第一",
+    "english": "first",
+    "sort": 13
+  },
+  {
+    "id": "g4-upper-u07-014",
+    "unitKey": "unit7",
+    "chinese": "爬树",
+    "english": "climb trees",
+    "sort": 14
+  },
+  {
+    "id": "g4-upper-u08-001",
+    "unitKey": "unit8",
+    "chinese": "商店",
+    "english": "shop",
+    "sort": 1
+  },
+  {
+    "id": "g4-upper-u08-002",
+    "unitKey": "unit8",
+    "chinese": "番茄；西红柿(复数tomatoe...",
+    "english": "tomato",
+    "sort": 2
+  },
+  {
+    "id": "g4-upper-u08-003",
+    "unitKey": "unit8",
+    "chinese": "汤",
+    "english": "soup",
+    "sort": 3
+  },
+  {
+    "id": "g4-upper-u08-004",
+    "unitKey": "unit8",
+    "chinese": "土豆(复数potatoes)",
+    "english": "potato",
+    "sort": 4
+  },
+  {
+    "id": "g4-upper-u08-005",
+    "unitKey": "unit8",
+    "chinese": "胡萝卜",
+    "english": "carrot",
+    "sort": 5
+  },
+  {
+    "id": "g4-upper-u08-006",
+    "unitKey": "unit8",
+    "chinese": "三十",
+    "english": "thirty",
+    "sort": 6
+  },
+  {
+    "id": "g4-upper-u08-007",
+    "unitKey": "unit8",
+    "chinese": "鱼；鱼肉",
+    "english": "fish",
+    "sort": 7
+  },
+  {
+    "id": "g4-upper-u08-008",
+    "unitKey": "unit8",
+    "chinese": "肉",
+    "english": "meat",
+    "sort": 8
+  },
+  {
+    "id": "g4-upper-u08-009",
+    "unitKey": "unit8",
+    "chinese": "大米；米饭",
+    "english": "rice",
+    "sort": 9
+  },
+  {
+    "id": "g4-upper-u08-010",
+    "unitKey": "unit8",
+    "chinese": "眼镜",
+    "english": "glasses",
+    "sort": 10
+  },
+  {
+    "id": "g4-upper-u08-011",
+    "unitKey": "unit8",
+    "chinese": "想要",
+    "english": "want",
+    "sort": 11
+  },
+  {
+    "id": "g4-upper-u08-012",
+    "unitKey": "unit8",
+    "chinese": "一起",
+    "english": "together",
+    "sort": 12
+  },
+  {
+    "id": "g4-upper-u08-013",
+    "unitKey": "unit8",
+    "chinese": "神奇的；有魔力的",
+    "english": "magic",
+    "sort": 13
+  },
+  {
+    "id": "g4-upper-u09-001",
+    "unitKey": "unit9",
+    "chinese": "需要",
+    "english": "need",
+    "sort": 1
+  },
+  {
+    "id": "g4-upper-u09-002",
+    "unitKey": "unit9",
+    "chinese": "哪里",
+    "english": "where",
+    "sort": 2
+  },
+  {
+    "id": "g4-upper-u09-003",
+    "unitKey": "unit9",
+    "chinese": "在……里面",
+    "english": "in",
+    "sort": 3
+  },
+  {
+    "id": "g4-upper-u09-004",
+    "unitKey": "unit9",
+    "chinese": "盒子；箱子",
+    "english": "box",
+    "sort": 4
+  },
+  {
+    "id": "g4-upper-u09-005",
+    "unitKey": "unit9",
+    "chinese": "给",
+    "english": "give",
+    "sort": 5
+  },
+  {
+    "id": "g4-upper-u09-006",
+    "unitKey": "unit9",
+    "chinese": "盘子；碟子",
+    "english": "plate",
+    "sort": 6
+  },
+  {
+    "id": "g4-upper-u09-007",
+    "unitKey": "unit9",
+    "chinese": "在……上面",
+    "english": "on",
+    "sort": 7
+  },
+  {
+    "id": "g4-upper-u09-008",
+    "unitKey": "unit9",
+    "chinese": "桌子",
+    "english": "table",
+    "sort": 8
+  },
+  {
+    "id": "g4-upper-u09-009",
+    "unitKey": "unit9",
+    "chinese": "午餐",
+    "english": "lunch",
+    "sort": 9
+  },
+  {
+    "id": "g4-upper-u09-010",
+    "unitKey": "unit9",
+    "chinese": "在……下面",
+    "english": "under",
+    "sort": 10
+  },
+  {
+    "id": "g4-upper-u09-011",
+    "unitKey": "unit9",
+    "chinese": "在……旁边",
+    "english": "beside",
+    "sort": 11
+  },
+  {
+    "id": "g4-upper-u09-012",
+    "unitKey": "unit9",
+    "chinese": "厨房",
+    "english": "kitchen",
+    "sort": 12
+  },
+  {
+    "id": "g4-upper-u09-013",
+    "unitKey": "unit9",
+    "chinese": "地板",
+    "english": "floor",
+    "sort": 13
+  },
+  {
+    "id": "g4-upper-u09-014",
+    "unitKey": "unit9",
+    "chinese": "生气的",
+    "english": "angry",
+    "sort": 14
+  },
+  {
+    "id": "g4-upper-u10-001",
+    "unitKey": "unit10",
+    "chinese": "在……周围；到处",
+    "english": "around",
+    "sort": 1
+  },
+  {
+    "id": "g4-upper-u10-002",
+    "unitKey": "unit10",
+    "chinese": "家",
+    "english": "home",
+    "sort": 2
+  },
+  {
+    "id": "g4-upper-u10-003",
+    "unitKey": "unit10",
+    "chinese": "街道",
+    "english": "street",
+    "sort": 3
+  },
+  {
+    "id": "g4-upper-u10-004",
+    "unitKey": "unit10",
+    "chinese": "公园",
+    "english": "park",
+    "sort": 4
+  },
+  {
+    "id": "g4-upper-u10-005",
+    "unitKey": "unit10",
+    "chinese": "在……附近",
+    "english": "near",
+    "sort": 5
+  },
+  {
+    "id": "g4-upper-u10-006",
+    "unitKey": "unit10",
+    "chinese": "在……后面",
+    "english": "behind",
+    "sort": 6
+  },
+  {
+    "id": "g4-upper-u10-007",
+    "unitKey": "unit10",
+    "chinese": "超市",
+    "english": "supermarket",
+    "sort": 7
+  },
+  {
+    "id": "g4-upper-u10-008",
+    "unitKey": "unit10",
+    "chinese": "餐馆",
+    "english": "restaurant",
+    "sort": 8
+  },
+  {
+    "id": "g4-upper-u10-009",
+    "unitKey": "unit10",
+    "chinese": "住；居住",
+    "english": "live",
+    "sort": 9
+  },
+  {
+    "id": "g4-upper-u10-010",
+    "unitKey": "unit10",
+    "chinese": "古老的；旧的",
+    "english": "old",
+    "sort": 10
+  },
+  {
+    "id": "g4-upper-u10-011",
+    "unitKey": "unit10",
+    "chinese": "吃",
+    "english": "eat",
+    "sort": 11
+  },
+  {
+    "id": "g4-upper-u10-012",
+    "unitKey": "unit10",
+    "chinese": "美味的；美好的",
+    "english": "nice",
+    "sort": 12
+  },
+  {
+    "id": "g4-upper-u10-013",
+    "unitKey": "unit10",
+    "chinese": "食物",
+    "english": "food",
+    "sort": 13
+  },
+  {
+    "id": "g4-upper-u10-014",
+    "unitKey": "unit10",
+    "chinese": "很多；大量的",
+    "english": "a lot of",
+    "sort": 14
+  },
+  {
+    "id": "g4-upper-u11-001",
+    "unitKey": "unit11",
+    "chinese": "形状",
+    "english": "shape",
+    "sort": 1
+  },
+  {
+    "id": "g4-upper-u11-002",
+    "unitKey": "unit11",
+    "chinese": "图画；照片",
+    "english": "picture",
+    "sort": 2
+  },
+  {
+    "id": "g4-upper-u11-003",
+    "unitKey": "unit11",
+    "chinese": "正方形",
+    "english": "square",
+    "sort": 3
+  },
+  {
+    "id": "g4-upper-u11-004",
+    "unitKey": "unit11",
+    "chinese": "圆，圆形",
+    "english": "circle",
+    "sort": 4
+  },
+  {
+    "id": "g4-upper-u11-005",
+    "unitKey": "unit11",
+    "chinese": "五角星形；星星",
+    "english": "star",
+    "sort": 5
+  },
+  {
+    "id": "g4-upper-u11-006",
+    "unitKey": "unit11",
+    "chinese": "长方形",
+    "english": "rectangle",
+    "sort": 6
+  },
+  {
+    "id": "g4-upper-u11-007",
+    "unitKey": "unit11",
+    "chinese": "三角形",
+    "english": "triangle",
+    "sort": 7
+  },
+  {
+    "id": "g4-upper-u11-008",
+    "unitKey": "unit11",
+    "chinese": "今天",
+    "english": "today",
+    "sort": 8
+  },
+  {
+    "id": "g4-upper-u11-009",
+    "unitKey": "unit11",
+    "chinese": "好 adj. 健康",
+    "english": "well",
+    "sort": 9
+  },
+  {
+    "id": "g4-upper-u12-001",
+    "unitKey": "unit12",
+    "chinese": "天气",
+    "english": "weather",
+    "sort": 1
+  },
+  {
+    "id": "g4-upper-u12-002",
+    "unitKey": "unit12",
+    "chinese": "多雨的",
+    "english": "rainy",
+    "sort": 2
+  },
+  {
+    "id": "g4-upper-u12-003",
+    "unitKey": "unit12",
+    "chinese": "多云的",
+    "english": "cloudy",
+    "sort": 3
+  },
+  {
+    "id": "g4-upper-u12-004",
+    "unitKey": "unit12",
+    "chinese": "风大的；多风的",
+    "english": "windy",
+    "sort": 4
+  },
+  {
+    "id": "g4-upper-u12-005",
+    "unitKey": "unit12",
+    "chinese": "阳光充足的",
+    "english": "sunny",
+    "sort": 5
+  },
+  {
+    "id": "g4-upper-u12-006",
+    "unitKey": "unit12",
+    "chinese": "星期天",
+    "english": "Sunday",
+    "sort": 6
+  },
+  {
+    "id": "g4-upper-u12-007",
+    "unitKey": "unit12",
+    "chinese": "云",
+    "english": "cloud",
+    "sort": 7
+  },
+  {
+    "id": "g4-upper-u12-008",
+    "unitKey": "unit12",
+    "chinese": "下雨 n. 雨",
+    "english": "rain",
+    "sort": 8
+  },
+  {
+    "id": "g4-upper-u12-009",
+    "unitKey": "unit12",
+    "chinese": "太阳",
+    "english": "sun",
+    "sort": 9
+  },
+  {
+    "id": "g4-upper-u12-010",
+    "unitKey": "unit12",
+    "chinese": "风",
+    "english": "wind",
+    "sort": 10
+  }
+]

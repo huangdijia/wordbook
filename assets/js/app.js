@@ -14,6 +14,8 @@ const state = {
   error: null
 }
 
+const wordsCache = new Map()
+
 const elements = {
   title: document.querySelector('#app-title'),
   subtitle: document.querySelector('#app-subtitle'),
@@ -60,10 +62,12 @@ async function init() {
   renderLoading()
 
   try {
-    state.config = await loadJson('data/config.json', '配置文件加载失败，请检查 data/config.json')
-    state.words = await loadJson('data/words.json', '词库文件加载失败，请检查 data/words.json')
-    state.error = null
+    await loadConfig()
     applyInitialState()
+    await loadCurrentWords()
+    resetPracticeWords()
+    savePracticeConfig()
+    state.error = null
     state.loading = false
     renderAll()
   } catch (error) {
@@ -71,6 +75,27 @@ async function init() {
     state.loading = false
     renderAll()
   }
+}
+
+async function loadConfig() {
+  state.config = await loadJson('data/config.json', '配置文件加载失败，请检查 data/config.json')
+}
+
+async function loadCurrentWords() {
+  const wordsFile = getCurrentWordsFile()
+
+  if (!wordsFile) {
+    throw new Error('词库文件配置缺失，请检查 data/config.json')
+  }
+
+  if (wordsCache.has(wordsFile)) {
+    state.words = wordsCache.get(wordsFile)
+    return
+  }
+
+  const words = await loadJson(wordsFile, `词库文件加载失败，请检查 ${wordsFile}`)
+  wordsCache.set(wordsFile, words)
+  state.words = words
 }
 
 function applyInitialState() {
@@ -99,8 +124,6 @@ function applyInitialState() {
   state.currentUnitKey = getCurrentVolume()?.units?.some(unit => unit.key === savedPracticeConfig?.unitKey)
     ? savedPracticeConfig.unitKey
     : getCurrentVolume()?.units?.[0]?.key || ''
-  resetPracticeWords()
-  savePracticeConfig()
 }
 
 function getCookie(name) {
@@ -182,6 +205,10 @@ function getCurrentVolume() {
   return getCurrentGrade()?.volumes?.find(volume => volume.key === state.currentVolumeKey)
 }
 
+function getCurrentWordsFile() {
+  return getCurrentVolume()?.wordsFile || ''
+}
+
 function getCurrentWord() {
   return state.currentWords[state.currentIndex]
 }
@@ -189,25 +216,20 @@ function getCurrentWord() {
 function isValidWord(word) {
   return word &&
     typeof word.id === 'string' &&
-    typeof word.gradeKey === 'string' &&
-    typeof word.volumeKey === 'string' &&
     typeof word.unitKey === 'string' &&
     typeof word.chinese === 'string' &&
     typeof word.english === 'string' &&
     typeof word.sort === 'number'
 }
 
-function getWordsByGradeVolumeAndUnit(words, gradeKey, volumeKey, unitKey) {
+function getWordsByUnit(words, unitKey) {
   return words
     .filter(word => {
       const valid = isValidWord(word)
       if (!valid) {
         console.warn('跳过字段缺失的单词：', word)
       }
-      return valid &&
-        word.gradeKey === gradeKey &&
-        word.volumeKey === volumeKey &&
-        word.unitKey === unitKey
+      return valid && word.unitKey === unitKey
     })
     .sort((a, b) => a.sort - b.sort)
 }
@@ -223,8 +245,8 @@ function shuffleWords(words) {
   return nextWords
 }
 
-function buildPracticeWords(words, gradeKey, volumeKey, unitKey, mode) {
-  const selectedWords = getWordsByGradeVolumeAndUnit(words, gradeKey, volumeKey, unitKey)
+function buildPracticeWords(words, unitKey, mode) {
+  const selectedWords = getWordsByUnit(words, unitKey)
 
   if (mode === 'random') {
     return shuffleWords(selectedWords)
@@ -236,8 +258,6 @@ function buildPracticeWords(words, gradeKey, volumeKey, unitKey, mode) {
 function resetPracticeWords() {
   state.currentWords = buildPracticeWords(
     state.words,
-    state.currentGradeKey,
-    state.currentVolumeKey,
     state.currentUnitKey,
     state.currentMode
   )
@@ -288,7 +308,7 @@ function renderControls() {
   renderOptions(elements.modeSelect, getModes(), mode => mode.name)
   elements.modeSelect.value = state.currentMode
 
-  const disabled = Boolean(state.error)
+  const disabled = Boolean(state.error) || state.loading
   elements.gradeSelect.disabled = disabled || getGrades().length === 0
   elements.volumeSelect.disabled = disabled || volumes.length === 0
   elements.unitSelect.disabled = disabled || units.length === 0
@@ -325,7 +345,7 @@ function renderMessage() {
   }
 
   if (!state.loading && state.currentWords.length === 0) {
-    elements.message.textContent = '当前单元暂无单词，请检查 words.json 配置。'
+    elements.message.textContent = '当前单元暂无单词，请检查当前册词库配置。'
     elements.message.hidden = false
     return
   }
@@ -341,6 +361,14 @@ function renderCard() {
   elements.card.disabled = !hasWord
   elements.card.classList.toggle('is-flipped', state.isFlipped)
   elements.card.setAttribute('aria-pressed', String(state.isFlipped))
+
+  if (state.loading) {
+    elements.cardFrontMain.textContent = '加载中...'
+    elements.cardFrontHint.textContent = '请稍候'
+    elements.cardBackMain.textContent = 'Loading...'
+    elements.cardBackHint.textContent = '请稍候'
+    return
+  }
 
   if (state.error) {
     elements.cardFrontMain.textContent = '加载失败'
@@ -376,21 +404,41 @@ function renderActions() {
   elements.nextButton.textContent = isLastWord ? '已完成' : '下一个'
 }
 
-function handleGradeChange(event) {
+async function reloadCurrentWords() {
+  state.loading = true
+  state.error = null
+  state.words = []
+  state.currentWords = []
+  goToWord(0)
+  renderAll()
+
+  try {
+    await loadCurrentWords()
+    resetPracticeWords()
+    savePracticeConfig()
+    state.loading = false
+    renderAll()
+  } catch (error) {
+    state.error = error.message
+    state.loading = false
+    state.words = []
+    state.currentWords = []
+    goToWord(0)
+    renderAll()
+  }
+}
+
+async function handleGradeChange(event) {
   state.currentGradeKey = event.target.value
   state.currentVolumeKey = getCurrentGrade()?.volumes?.[0]?.key || ''
   state.currentUnitKey = getCurrentVolume()?.units?.[0]?.key || ''
-  resetPracticeWords()
-  savePracticeConfig()
-  renderAll()
+  await reloadCurrentWords()
 }
 
-function handleVolumeChange(event) {
+async function handleVolumeChange(event) {
   state.currentVolumeKey = event.target.value
   state.currentUnitKey = getCurrentVolume()?.units?.[0]?.key || ''
-  resetPracticeWords()
-  savePracticeConfig()
-  renderAll()
+  await reloadCurrentWords()
 }
 
 function handleUnitChange(event) {

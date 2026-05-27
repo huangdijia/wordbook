@@ -85,7 +85,8 @@
               "name": "Unit 12",
               "title": "In the park"
             }
-          ]
+          ],
+          "wordsFile": "data/words/grade_1a.json"
         },
         {
           "key": "lower",
@@ -151,7 +152,8 @@
               "name": "Unit 12",
               "title": "A boy and a wolf"
             }
-          ]
+          ],
+          "wordsFile": "data/words/grade_1b.json"
         }
       ]
     },
@@ -223,7 +225,8 @@
               "name": "Unit 12",
               "title": "In the street"
             }
-          ]
+          ],
+          "wordsFile": "data/words/grade_2a.json"
         },
         {
           "key": "lower",
@@ -289,7 +292,8 @@
               "name": "Unit 12",
               "title": "A girl and three bears"
             }
-          ]
+          ],
+          "wordsFile": "data/words/grade_2b.json"
         }
       ]
     },
@@ -341,7 +345,8 @@
               "name": "Unit 8",
               "title": "Why do we like birthdays?"
             }
-          ]
+          ],
+          "wordsFile": "data/words/grade_3a.json"
         },
         {
           "key": "lower",
@@ -407,7 +412,8 @@
               "name": "Unit 12",
               "title": "The four seasons"
             }
-          ]
+          ],
+          "wordsFile": "data/words/grade_3b.json"
         }
       ]
     },
@@ -479,7 +485,8 @@
               "name": "Unit 12",
               "title": "Weather"
             }
-          ]
+          ],
+          "wordsFile": "data/words/grade_4a.json"
         },
         {
           "key": "lower",
@@ -545,7 +552,8 @@
               "name": "Unit 12",
               "title": "the ugly duckling"
             }
-          ]
+          ],
+          "wordsFile": "data/words/grade_4b.json"
         }
       ]
     },
@@ -617,7 +625,8 @@
               "name": "Unit 12",
               "title": "fire"
             }
-          ]
+          ],
+          "wordsFile": "data/words/grade_5a.json"
         },
         {
           "key": "lower",
@@ -683,7 +692,8 @@
               "name": "Unit 12",
               "title": "the giant's garden"
             }
-          ]
+          ],
+          "wordsFile": "data/words/grade_5b.json"
         }
       ]
     },
@@ -755,7 +765,8 @@
               "name": "Unit 12",
               "title": "the earth"
             }
-          ]
+          ],
+          "wordsFile": "data/words/grade_6a.json"
         },
         {
           "key": "lower",
@@ -821,7 +832,8 @@
               "name": "Unit 12",
               "title": "the five peas"
             }
-          ]
+          ],
+          "wordsFile": "data/words/grade_6b.json"
         }
       ]
     }

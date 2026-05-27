@@ -7,7 +7,7 @@
 ## 2. 基本假设
 
 1. 第一版只做纯静态网页，不引入后端、数据库、构建工具或登录体系。
-2. 数据源固定为 `data/config.json` 和 `data/words.json`。
+2. 数据源固定为 `data/config.json` 和 `data/words/*.json`。
 3. 页面通过本地静态服务或静态托管访问，不保证 `file://` 方式可用。
 4. V1.0 不实现 `localStorage` 学习记录、掌握标记、发音、拼写测试、批量导入和后台管理。
 
@@ -67,27 +67,27 @@
 **范围**
 
 - 新增 `data/config.json`。
-- 新增 `data/words.json`。
+- 新增 `data/words/` 下的按册次词库 JSON。
 - 在 `assets/js/app.js` 中通过 `fetch` 读取两个 JSON 文件。
 - 维护基础运行状态：`config`、`words`、`loading`、`error`。
 - 加载成功后渲染页面标题、副标题。
 
 **不做**
 
-- 不拆分为多个词库文件。
+- 不引入后端、数据库或构建工具。
 - 不做复杂 schema 校验，只做必要字段读取和错误提示。
 
 **交付物**
 
 - `data/config.json`
-- `data/words.json`
+- `data/words/*.json`
 - JSON 加载逻辑
 
 **验收**
 
-- `config.json` 和 `words.json` 职责分离。
+- `config.json` 和按册次词库 JSON 职责分离。
 - 页面标题、副标题来自 `config.json`。
-- 词库数据来自 `words.json`。
+- 词库数据来自当前册次的词库 JSON。
 - 加载失败时能进入错误提示流程。
 - 对应 PRD 验收项：A002、A003、D001。
 
@@ -139,9 +139,9 @@
 
 **范围**
 
-- 实现 `getWordsByGradeAndUnit(words, gradeKey, unitKey)`。
+- 实现 `getWordsByUnit(words, unitKey)`。
 - 实现 `shuffleWords(words)`。
-- 实现 `buildPracticeWords(words, gradeKey, unitKey, mode)`。
+- 实现 `buildPracticeWords(words, unitKey, mode)`。
 - 顺序模式按 `sort` 升序展示。
 - 随机模式只打乱当前单元内的单词。
 - 单词字段缺失时不阻断页面，优先跳过异常单词并在控制台提示。
@@ -246,9 +246,9 @@
 
 **范围**
 
-- 当前单元无单词时显示：`当前单元暂无单词，请检查 words.json 配置。`
+- 当前单元无单词时显示：`当前单元暂无单词，请检查当前册词库配置。`
 - `config.json` 加载失败时显示：`配置文件加载失败，请检查 data/config.json`。
-- `words.json` 加载失败时显示：`词库文件加载失败，请检查 data/words.json`。
+- 当前册词库加载失败时显示具体文件路径，例如：`词库文件加载失败，请检查 data/words/grade_1a.json`。
 - JSON 格式错误时归入对应加载失败提示。
 - 空状态下仍保留年级、单元、模式选择区域。
 
@@ -340,7 +340,7 @@ python3 -m http.server 8080
 |---|---|
 | A001 页面可以正常打开 | S01、S08 |
 | A002 可以读取 `config.json` | S02 |
-| A003 可以读取 `words.json` | S02 |
+| A003 可以读取当前册词库 JSON | S02 |
 | A004 默认显示中文 | S05 |
 | A005 点击卡片显示英文 | S05 |
 | A006 再次点击卡片显示中文 | S05 |
@@ -352,8 +352,8 @@ python3 -m http.server 8080
 | A012 随机模式 | S04 |
 | A013 进度显示 | S06 |
 | A014 空单元提示 | S07 |
-| D001 `config.json` 和 `words.json` 分离 | S02 |
-| D002 词库通过 `gradeKey` 关联年级 | S04 |
+| D001 `config.json` 和按册次词库 JSON 分离 | S02 |
+| D002 `wordsFile` 关联到当前册词库 | S04 |
 | D003 词库通过 `unitKey` 关联单元 | S04 |
 | D004 `sort` 字段有效 | S04 |
 | D005 新增单词后刷新页面 | S02、S04 |
@@ -370,4 +370,3 @@ python3 -m http.server 8080
 - 拼写测试。
 - Excel / CSV 批量导入。
 - 多主题皮肤。
-
