@@ -23,7 +23,9 @@
 │   └── icons/                 # PWA 图标
 ├── data/
 │   ├── config.json            # 应用、年级、册别、单元和模式配置
-│   └── words.json             # 单词数据
+│   └── words/                 # 按册次拆分的单词数据
+│       ├── grade_1a.json      # 一年级上册
+│       └── grade_1b.json      # 一年级下册
 ├── docs/
 │   ├── prd.md                 # 产品需求文档
 │   └── spec-plan.md           # Spec 拆分计划
@@ -53,18 +55,17 @@ http://localhost:8080
 
 - `app.title` 和 `app.subtitle` 控制页面标题和副标题。
 - `app.defaultGrade`、`app.defaultVolume`、`app.defaultMode` 控制默认练习范围。
+- `grades[].volumes[].wordsFile` 声明当前册别对应的词库文件。
 - `grades[].volumes[].units[]` 控制年级、册别和单元选项。
 - `modes[]` 当前包含 `sequence`（顺序模式）和 `random`（随机模式）。
 
 ### 修改单词
 
-编辑 `data/words.json`，每个单词包含以下字段：
+编辑 `data/words/` 下对应册次的 JSON 文件，例如一年级上册为 `data/words/grade_1a.json`，一年级下册为 `data/words/grade_1b.json`。每个单词包含以下字段：
 
 ```json
 {
   "id": "g1-upper-u01-001",
-  "gradeKey": "grade1",
-  "volumeKey": "upper",
   "unitKey": "unit1",
   "chinese": "喂，你好",
   "english": "hello",
@@ -77,8 +78,6 @@ http://localhost:8080
 | 字段 | 说明 |
 | --- | --- |
 | `id` | 单词唯一 ID |
-| `gradeKey` | 所属年级，对应 `config.json` 中的年级 `key` |
-| `volumeKey` | 所属册别，对应 `config.json` 中的册别 `key` |
 | `unitKey` | 所属单元，对应 `config.json` 中的单元 `key` |
 | `chinese` | 卡片正面显示的中文释义 |
 | `english` | 卡片翻转后显示的英文 |
@@ -88,7 +87,7 @@ http://localhost:8080
 
 ```bash
 python3 -m json.tool data/config.json >/dev/null
-python3 -m json.tool data/words.json >/dev/null
+for f in data/words/*.json; do python3 -m json.tool "$f" >/dev/null; done
 ```
 
 ## 开发约定

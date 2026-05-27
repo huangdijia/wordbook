@@ -1,0 +1,940 @@
+[
+  {
+    "id": "g6-upper-u01-001",
+    "unitKey": "unit1",
+    "chinese": "一个月的时间；月份",
+    "english": "month",
+    "sort": 1
+  },
+  {
+    "id": "g6-upper-u01-002",
+    "unitKey": "unit1",
+    "chinese": "可爱的",
+    "english": "cute",
+    "sort": 2
+  },
+  {
+    "id": "g6-upper-u01-003",
+    "unitKey": "unit1",
+    "chinese": "漂亮的",
+    "english": "pretty",
+    "sort": 3
+  },
+  {
+    "id": "g6-upper-u01-004",
+    "unitKey": "unit1",
+    "chinese": "英俊的，帅气的",
+    "english": "handsome",
+    "sort": 4
+  },
+  {
+    "id": "g6-upper-u01-005",
+    "unitKey": "unit1",
+    "chinese": "乌龟",
+    "english": "turtle",
+    "sort": 5
+  },
+  {
+    "id": "g6-upper-u01-006",
+    "unitKey": "unit1",
+    "chinese": "逮住；捕捉",
+    "english": "catch",
+    "sort": 6
+  },
+  {
+    "id": "g6-upper-u01-007",
+    "unitKey": "unit1",
+    "chinese": "苍蝇",
+    "english": "fly",
+    "sort": 7
+  },
+  {
+    "id": "g6-upper-u01-008",
+    "unitKey": "unit1",
+    "chinese": "长大；成长",
+    "english": "grow up",
+    "sort": 8
+  },
+  {
+    "id": "g6-upper-u01-009",
+    "unitKey": "unit1",
+    "chinese": "初级中学",
+    "english": "junior high school",
+    "sort": 9
+  },
+  {
+    "id": "g6-upper-u01-010",
+    "unitKey": "unit1",
+    "chinese": "出生",
+    "english": "(be) born",
+    "sort": 10
+  },
+  {
+    "id": "g6-upper-u02-001",
+    "unitKey": "unit2",
+    "chinese": "著名的；出名的",
+    "english": "famous",
+    "sort": 1
+  },
+  {
+    "id": "g6-upper-u02-002",
+    "unitKey": "unit2",
+    "chinese": "在……期间",
+    "english": "during",
+    "sort": 2
+  },
+  {
+    "id": "g6-upper-u02-003",
+    "unitKey": "unit2",
+    "chinese": "度过",
+    "english": "spend",
+    "sort": 3
+  },
+  {
+    "id": "g6-upper-u02-004",
+    "unitKey": "unit2",
+    "chinese": "每个人；所有人",
+    "english": "everyone",
+    "sort": 4
+  },
+  {
+    "id": "g6-upper-u02-005",
+    "unitKey": "unit2",
+    "chinese": "乡村；农村",
+    "english": "countryside",
+    "sort": 5
+  },
+  {
+    "id": "g6-upper-u02-006",
+    "unitKey": "unit2",
+    "chinese": "采摘",
+    "english": "pick",
+    "sort": 6
+  },
+  {
+    "id": "g6-upper-u02-007",
+    "unitKey": "unit2",
+    "chinese": "暑假",
+    "english": "summer holiday",
+    "sort": 7
+  },
+  {
+    "id": "g6-upper-u03-001",
+    "unitKey": "unit3",
+    "chinese": "健康的；有益于健康的",
+    "english": "healthy",
+    "sort": 1
+  },
+  {
+    "id": "g6-upper-u03-002",
+    "unitKey": "unit3",
+    "chinese": "不健康的；损害健康的",
+    "english": "unhealthy",
+    "sort": 2
+  },
+  {
+    "id": "g6-upper-u03-003",
+    "unitKey": "unit3",
+    "chinese": "汉堡包",
+    "english": "hamburger",
+    "sort": 3
+  },
+  {
+    "id": "g6-upper-u03-004",
+    "unitKey": "unit3",
+    "chinese": "可乐",
+    "english": "cola",
+    "sort": 4
+  },
+  {
+    "id": "g6-upper-u03-005",
+    "unitKey": "unit3",
+    "chinese": "昨天",
+    "english": "yesterday",
+    "sort": 5
+  },
+  {
+    "id": "g6-upper-u03-006",
+    "unitKey": "unit3",
+    "chinese": "水果",
+    "english": "fruit",
+    "sort": 6
+  },
+  {
+    "id": "g6-upper-u03-007",
+    "unitKey": "unit3",
+    "chinese": "馅饼",
+    "english": "pie",
+    "sort": 7
+  },
+  {
+    "id": "g6-upper-u03-008",
+    "unitKey": "unit3",
+    "chinese": "比萨饼",
+    "english": "pizza",
+    "sort": 8
+  },
+  {
+    "id": "g6-upper-u03-009",
+    "unitKey": "unit3",
+    "chinese": "三明治",
+    "english": "sandwich",
+    "sort": 9
+  },
+  {
+    "id": "g6-upper-u03-010",
+    "unitKey": "unit3",
+    "chinese": "蔬菜",
+    "english": "vegetable",
+    "sort": 10
+  },
+  {
+    "id": "g6-upper-u03-011",
+    "unitKey": "unit3",
+    "chinese": "鸡肉",
+    "english": "chicken",
+    "sort": 11
+  },
+  {
+    "id": "g6-upper-u03-012",
+    "unitKey": "unit3",
+    "chinese": "巧克力",
+    "english": "chocolate",
+    "sort": 12
+  },
+  {
+    "id": "g6-upper-u03-013",
+    "unitKey": "unit3",
+    "chinese": "少量的",
+    "english": "a little",
+    "sort": 13
+  },
+  {
+    "id": "g6-upper-u03-014",
+    "unitKey": "unit3",
+    "chinese": "炸鱼薯条",
+    "english": "fish and chips",
+    "sort": 14
+  },
+  {
+    "id": "g6-upper-u04-001",
+    "unitKey": "unit4",
+    "chinese": "邻居",
+    "english": "neighbour",
+    "sort": 1
+  },
+  {
+    "id": "g6-upper-u04-002",
+    "unitKey": "unit4",
+    "chinese": "儿子",
+    "english": "son",
+    "sort": 2
+  },
+  {
+    "id": "g6-upper-u04-003",
+    "unitKey": "unit4",
+    "chinese": "女儿",
+    "english": "daughter",
+    "sort": 3
+  },
+  {
+    "id": "g6-upper-u04-004",
+    "unitKey": "unit4",
+    "chinese": "吵闹的",
+    "english": "noisy",
+    "sort": 4
+  },
+  {
+    "id": "g6-upper-u04-005",
+    "unitKey": "unit4",
+    "chinese": "猫头鹰",
+    "english": "owl",
+    "sort": 5
+  },
+  {
+    "id": "g6-upper-u04-006",
+    "unitKey": "unit4",
+    "chinese": "挖(土);掘(洞)",
+    "english": "dig",
+    "sort": 6
+  },
+  {
+    "id": "g6-upper-u04-007",
+    "unitKey": "unit4",
+    "chinese": "制造噪音",
+    "english": "make noise",
+    "sort": 7
+  },
+  {
+    "id": "g6-upper-u05-001",
+    "unitKey": "unit5",
+    "chinese": "一千",
+    "english": "thousand",
+    "sort": 1
+  },
+  {
+    "id": "g6-upper-u05-002",
+    "unitKey": "unit5",
+    "chinese": "一百",
+    "english": "hundred",
+    "sort": 2
+  },
+  {
+    "id": "g6-upper-u05-003",
+    "unitKey": "unit5",
+    "chinese": "野生环境；野生的",
+    "english": "wild",
+    "sort": 3
+  },
+  {
+    "id": "g6-upper-u05-004",
+    "unitKey": "unit5",
+    "chinese": "华南虎",
+    "english": "South China tiger",
+    "sort": 4
+  },
+  {
+    "id": "g6-upper-u05-005",
+    "unitKey": "unit5",
+    "chinese": "蓝鲸",
+    "english": "blue whale",
+    "sort": 5
+  },
+  {
+    "id": "g6-upper-u05-006",
+    "unitKey": "unit5",
+    "chinese": "路；方式；方法",
+    "english": "way",
+    "sort": 6
+  },
+  {
+    "id": "g6-upper-u05-007",
+    "unitKey": "unit5",
+    "chinese": "死：死亡",
+    "english": "die",
+    "sort": 7
+  },
+  {
+    "id": "g6-upper-u05-008",
+    "unitKey": "unit5",
+    "chinese": "犀牛",
+    "english": "rhino",
+    "sort": 8
+  },
+  {
+    "id": "g6-upper-u05-009",
+    "unitKey": "unit5",
+    "chinese": "学会；学习",
+    "english": "learn",
+    "sort": 9
+  },
+  {
+    "id": "g6-upper-u05-010",
+    "unitKey": "unit5",
+    "chinese": "安排去：寄；送",
+    "english": "send",
+    "sort": 10
+  },
+  {
+    "id": "g6-upper-u05-011",
+    "unitKey": "unit5",
+    "chinese": "面临危险",
+    "english": "in danger",
+    "sort": 11
+  },
+  {
+    "id": "g6-upper-u05-012",
+    "unitKey": "unit5",
+    "chinese": "在过去",
+    "english": "in the past",
+    "sort": 12
+  },
+  {
+    "id": "g6-upper-u05-013",
+    "unitKey": "unit5",
+    "chinese": "照顾：照料",
+    "english": "take care of",
+    "sort": 13
+  },
+  {
+    "id": "g6-upper-u05-014",
+    "unitKey": "unit5",
+    "chinese": "去散步",
+    "english": "go for a walk",
+    "sort": 14
+  },
+  {
+    "id": "g6-upper-u05-015",
+    "unitKey": "unit5",
+    "chinese": "赶走",
+    "english": "drive away",
+    "sort": 15
+  },
+  {
+    "id": "g6-upper-u06-001",
+    "unitKey": "unit6",
+    "chinese": "网友",
+    "english": "e-friend",
+    "sort": 1
+  },
+  {
+    "id": "g6-upper-u06-002",
+    "unitKey": "unit6",
+    "chinese": "国家",
+    "english": "country",
+    "sort": 2
+  },
+  {
+    "id": "g6-upper-u06-003",
+    "unitKey": "unit6",
+    "chinese": "其他的",
+    "english": "other",
+    "sort": 3
+  },
+  {
+    "id": "g6-upper-u06-004",
+    "unitKey": "unit6",
+    "chinese": "(游戏或运动的)队",
+    "english": "team",
+    "sort": 4
+  },
+  {
+    "id": "g6-upper-u06-005",
+    "unitKey": "unit6",
+    "chinese": "业余爱好",
+    "english": "hobby",
+    "sort": 5
+  },
+  {
+    "id": "g6-upper-u06-006",
+    "unitKey": "unit6",
+    "chinese": "年级",
+    "english": "grade",
+    "sort": 6
+  },
+  {
+    "id": "g6-upper-u06-007",
+    "unitKey": "unit6",
+    "chinese": "你自己",
+    "english": "yourself",
+    "sort": 7
+  },
+  {
+    "id": "g6-upper-u06-008",
+    "unitKey": "unit6",
+    "chinese": "(表示愿意、喜欢)",
+    "english": "would like",
+    "sort": 8
+  },
+  {
+    "id": "g6-upper-u07-001",
+    "unitKey": "unit7",
+    "chinese": "(表示提出或征求意见)",
+    "english": "shall",
+    "sort": 1
+  },
+  {
+    "id": "g6-upper-u07-002",
+    "unitKey": "unit7",
+    "chinese": "公主",
+    "english": "princess",
+    "sort": 2
+  },
+  {
+    "id": "g6-upper-u07-003",
+    "unitKey": "unit7",
+    "chinese": "警方；警察部门",
+    "english": "police",
+    "sort": 3
+  },
+  {
+    "id": "g6-upper-u07-004",
+    "unitKey": "unit7",
+    "chinese": "令人激动的；使人兴奋的",
+    "english": "exciting",
+    "sort": 4
+  },
+  {
+    "id": "g6-upper-u07-005",
+    "unitKey": "unit7",
+    "chinese": "勇敢的",
+    "english": "brave",
+    "sort": 5
+  },
+  {
+    "id": "g6-upper-u07-006",
+    "unitKey": "unit7",
+    "chinese": "警察(复数policemen)",
+    "english": "policeman",
+    "sort": 6
+  },
+  {
+    "id": "g6-upper-u07-007",
+    "unitKey": "unit7",
+    "chinese": "没趣的；令人厌倦的",
+    "english": "boring",
+    "sort": 7
+  },
+  {
+    "id": "g6-upper-u07-008",
+    "unitKey": "unit7",
+    "chinese": "王后",
+    "english": "queen",
+    "sort": 8
+  },
+  {
+    "id": "g6-upper-u07-009",
+    "unitKey": "unit7",
+    "chinese": "镜子",
+    "english": "mirror",
+    "sort": 9
+  },
+  {
+    "id": "g6-upper-u07-010",
+    "unitKey": "unit7",
+    "chinese": "最美丽的",
+    "english": "fairest",
+    "sort": 10
+  },
+  {
+    "id": "g6-upper-u07-011",
+    "unitKey": "unit7",
+    "chinese": "杀死",
+    "english": "kill",
+    "sort": 11
+  },
+  {
+    "id": "g6-upper-u07-012",
+    "unitKey": "unit7",
+    "chinese": "睡着的",
+    "english": "asleep",
+    "sort": 12
+  },
+  {
+    "id": "g6-upper-u07-013",
+    "unitKey": "unit7",
+    "chinese": "下次",
+    "english": "next time",
+    "sort": 13
+  },
+  {
+    "id": "g6-upper-u07-014",
+    "unitKey": "unit7",
+    "chinese": "从前",
+    "english": "once upon a time",
+    "sort": 14
+  },
+  {
+    "id": "g6-upper-u07-015",
+    "unitKey": "unit7",
+    "chinese": "睡着",
+    "english": "fall asleep",
+    "sort": 15
+  },
+  {
+    "id": "g6-upper-u08-001",
+    "unitKey": "unit8",
+    "chinese": "蜜蜂",
+    "english": "bee",
+    "sort": 1
+  },
+  {
+    "id": "g6-upper-u08-002",
+    "unitKey": "unit8",
+    "chinese": "昆虫",
+    "english": "insect",
+    "sort": 2
+  },
+  {
+    "id": "g6-upper-u08-003",
+    "unitKey": "unit8",
+    "chinese": "蚂蚊",
+    "english": "ant",
+    "sort": 3
+  },
+  {
+    "id": "g6-upper-u08-004",
+    "unitKey": "unit8",
+    "chinese": "任何东西",
+    "english": "anything",
+    "sort": 4
+  },
+  {
+    "id": "g6-upper-u08-005",
+    "unitKey": "unit8",
+    "chinese": "种类",
+    "english": "kind",
+    "sort": 5
+  },
+  {
+    "id": "g6-upper-u08-006",
+    "unitKey": "unit8",
+    "chinese": "手指",
+    "english": "finger",
+    "sort": 6
+  },
+  {
+    "id": "g6-upper-u08-007",
+    "unitKey": "unit8",
+    "chinese": "跳舞者；舞蹈演员",
+    "english": "dancer",
+    "sort": 7
+  },
+  {
+    "id": "g6-upper-u08-008",
+    "unitKey": "unit8",
+    "chinese": "昆虫博物馆",
+    "english": "insect museum",
+    "sort": 8
+  },
+  {
+    "id": "g6-upper-u08-009",
+    "unitKey": "unit8",
+    "chinese": "汽车博物馆",
+    "english": "car museum",
+    "sort": 9
+  },
+  {
+    "id": "g6-upper-u08-010",
+    "unitKey": "unit8",
+    "chinese": "汽车模型",
+    "english": "model car",
+    "sort": 10
+  },
+  {
+    "id": "g6-upper-u08-011",
+    "unitKey": "unit8",
+    "chinese": "科学博物馆",
+    "english": "science museum",
+    "sort": 11
+  },
+  {
+    "id": "g6-upper-u08-012",
+    "unitKey": "unit8",
+    "chinese": "各种各样的",
+    "english": "many kinds of",
+    "sort": 12
+  },
+  {
+    "id": "g6-upper-u09-001",
+    "unitKey": "unit9",
+    "chinese": "首都",
+    "english": "capital",
+    "sort": 1
+  },
+  {
+    "id": "g6-upper-u09-002",
+    "unitKey": "unit9",
+    "chinese": "北：北部",
+    "english": "north",
+    "sort": 2
+  },
+  {
+    "id": "g6-upper-u09-003",
+    "unitKey": "unit9",
+    "chinese": "东：东部",
+    "english": "east",
+    "sort": 3
+  },
+  {
+    "id": "g6-upper-u09-004",
+    "unitKey": "unit9",
+    "chinese": "西，西部",
+    "english": "west",
+    "sort": 4
+  },
+  {
+    "id": "g6-upper-u09-005",
+    "unitKey": "unit9",
+    "chinese": "南；南部",
+    "english": "south",
+    "sort": 5
+  },
+  {
+    "id": "g6-upper-u09-006",
+    "unitKey": "unit9",
+    "chinese": "王宫；宫殿",
+    "english": "palace",
+    "sort": 6
+  },
+  {
+    "id": "g6-upper-u09-007",
+    "unitKey": "unit9",
+    "chinese": "大多数",
+    "english": "most",
+    "sort": 7
+  },
+  {
+    "id": "g6-upper-u09-008",
+    "unitKey": "unit9",
+    "chinese": "游客",
+    "english": "tourist",
+    "sort": 8
+  },
+  {
+    "id": "g6-upper-u09-009",
+    "unitKey": "unit9",
+    "chinese": "建筑物；楼房",
+    "english": "building",
+    "sort": 9
+  },
+  {
+    "id": "g6-upper-u09-010",
+    "unitKey": "unit9",
+    "chinese": "寿司(日本食物)",
+    "english": "sushi",
+    "sort": 10
+  },
+  {
+    "id": "g6-upper-u09-011",
+    "unitKey": "unit9",
+    "chinese": "在……北部",
+    "english": "in the north of",
+    "sort": 11
+  },
+  {
+    "id": "g6-upper-u09-012",
+    "unitKey": "unit9",
+    "chinese": "在……东部",
+    "english": "in the east of",
+    "sort": 12
+  },
+  {
+    "id": "g6-upper-u10-001",
+    "unitKey": "unit10",
+    "chinese": "空气",
+    "english": "air",
+    "sort": 1
+  },
+  {
+    "id": "g6-upper-u10-002",
+    "unitKey": "unit10",
+    "chinese": "处处；到处",
+    "english": "everywhere",
+    "sort": 2
+  },
+  {
+    "id": "g6-upper-u10-003",
+    "unitKey": "unit10",
+    "chinese": "活着的",
+    "english": "alive",
+    "sort": 3
+  },
+  {
+    "id": "g6-upper-u10-004",
+    "unitKey": "unit10",
+    "chinese": "气球",
+    "english": "balloon",
+    "sort": 4
+  },
+  {
+    "id": "g6-upper-u10-005",
+    "unitKey": "unit10",
+    "chinese": "工厂",
+    "english": "factory",
+    "sort": 5
+  },
+  {
+    "id": "g6-upper-u10-006",
+    "unitKey": "unit10",
+    "chinese": "烟",
+    "english": "smoke",
+    "sort": 6
+  },
+  {
+    "id": "g6-upper-u10-007",
+    "unitKey": "unit10",
+    "chinese": "脏的",
+    "english": "dirty",
+    "sort": 7
+  },
+  {
+    "id": "g6-upper-u10-008",
+    "unitKey": "unit10",
+    "chinese": "干净的：洁净的",
+    "english": "clean",
+    "sort": 8
+  },
+  {
+    "id": "g6-upper-u10-009",
+    "unitKey": "unit10",
+    "chinese": "盛到痛",
+    "english": "hurt",
+    "sort": 9
+  },
+  {
+    "id": "g6-upper-u10-010",
+    "unitKey": "unit10",
+    "chinese": "清新的",
+    "english": "fresh",
+    "sort": 10
+  },
+  {
+    "id": "g6-upper-u10-011",
+    "unitKey": "unit10",
+    "chinese": "种植",
+    "english": "plant",
+    "sort": 11
+  },
+  {
+    "id": "g6-upper-u10-012",
+    "unitKey": "unit10",
+    "chinese": "让……活着",
+    "english": "keep…alive",
+    "sort": 12
+  },
+  {
+    "id": "g6-upper-u10-013",
+    "unitKey": "unit10",
+    "chinese": "植树",
+    "english": "plant trees",
+    "sort": 13
+  },
+  {
+    "id": "g6-upper-u11-001",
+    "unitKey": "unit11",
+    "chinese": "木头：木材材",
+    "english": "wood",
+    "sort": 1
+  },
+  {
+    "id": "g6-upper-u11-002",
+    "unitKey": "unit11",
+    "chinese": "使变凉",
+    "english": "cool",
+    "sort": 2
+  },
+  {
+    "id": "g6-upper-u11-003",
+    "unitKey": "unit11",
+    "chinese": "火柴",
+    "english": "match",
+    "sort": 3
+  },
+  {
+    "id": "g6-upper-u11-004",
+    "unitKey": "unit11",
+    "chinese": "想念",
+    "english": "miss",
+    "sort": 4
+  },
+  {
+    "id": "g6-upper-u11-005",
+    "unitKey": "unit11",
+    "chinese": "不得不",
+    "english": "have to",
+    "sort": 5
+  },
+  {
+    "id": "g6-upper-u11-006",
+    "unitKey": "unit11",
+    "chinese": "把……砍倒",
+    "english": "cut…down",
+    "sort": 6
+  },
+  {
+    "id": "g6-upper-u11-007",
+    "unitKey": "unit11",
+    "chinese": "寻找",
+    "english": "look for",
+    "sort": 7
+  },
+  {
+    "id": "g6-upper-u12-001",
+    "unitKey": "unit12",
+    "chinese": "地球",
+    "english": "Earth",
+    "sort": 1
+  },
+  {
+    "id": "g6-upper-u12-002",
+    "unitKey": "unit12",
+    "chinese": "地区；区域",
+    "english": "part",
+    "sort": 2
+  },
+  {
+    "id": "g6-upper-u12-003",
+    "unitKey": "unit12",
+    "chinese": "森林",
+    "english": "forest",
+    "sort": 3
+  },
+  {
+    "id": "g6-upper-u12-004",
+    "unitKey": "unit12",
+    "chinese": "陆地",
+    "english": "land",
+    "sort": 4
+  },
+  {
+    "id": "g6-upper-u12-005",
+    "unitKey": "unit12",
+    "chinese": "海洋",
+    "english": "ocean",
+    "sort": 5
+  },
+  {
+    "id": "g6-upper-u12-006",
+    "unitKey": "unit12",
+    "chinese": "垃圾",
+    "english": "rubbish",
+    "sort": 6
+  },
+  {
+    "id": "g6-upper-u12-007",
+    "unitKey": "unit12",
+    "chinese": "生病的",
+    "english": "sick",
+    "sort": 7
+  },
+  {
+    "id": "g6-upper-u12-008",
+    "unitKey": "unit12",
+    "chinese": "回收利用；再利用",
+    "english": "recycle",
+    "sort": 8
+  },
+  {
+    "id": "g6-upper-u12-009",
+    "unitKey": "unit12",
+    "chinese": "玻璃制品：玻璃",
+    "english": "glass",
+    "sort": 9
+  },
+  {
+    "id": "g6-upper-u12-010",
+    "unitKey": "unit12",
+    "chinese": "自己的",
+    "english": "own",
+    "sort": 10
+  },
+  {
+    "id": "g6-upper-u12-011",
+    "unitKey": "unit12",
+    "chinese": "这么多",
+    "english": "so many",
+    "sort": 11
+  },
+  {
+    "id": "g6-upper-u12-012",
+    "unitKey": "unit12",
+    "chinese": "捡起；拾起",
+    "english": "pick up",
+    "sort": 12
+  },
+  {
+    "id": "g6-upper-u12-013",
+    "unitKey": "unit12",
+    "chinese": "购物袋",
+    "english": "shopping bag",
+    "sort": 13
+  },
+  {
+    "id": "g6-upper-u12-014",
+    "unitKey": "unit12",
+    "chinese": "塑料袋",
+    "english": "plastic bag",
+    "sort": 14
+  }
+]

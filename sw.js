@@ -1,4 +1,4 @@
-const CACHE_NAME = 'wordbook-pwa-v1'
+const CACHE_NAME = 'wordbook-pwa-v2'
 const APP_SHELL = [
   '/',
   '/index.html',
@@ -6,7 +6,18 @@ const APP_SHELL = [
   '/assets/css/style.css',
   '/assets/js/app.js',
   '/data/config.json',
-  '/data/words.json',
+  '/data/words/grade_1a.json',
+  '/data/words/grade_1b.json',
+  '/data/words/grade_2a.json',
+  '/data/words/grade_2b.json',
+  '/data/words/grade_3a.json',
+  '/data/words/grade_3b.json',
+  '/data/words/grade_4a.json',
+  '/data/words/grade_4b.json',
+  '/data/words/grade_5a.json',
+  '/data/words/grade_5b.json',
+  '/data/words/grade_6a.json',
+  '/data/words/grade_6b.json',
   '/assets/icons/icon-192.png',
   '/assets/icons/icon-512.png'
 ]

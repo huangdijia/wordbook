@@ -1,0 +1,961 @@
+[
+  {
+    "id": "g6-lower-u01-001",
+    "unitKey": "unit1",
+    "chinese": "有……重； 重",
+    "english": "weigh",
+    "sort": 1
+  },
+  {
+    "id": "g6-lower-u01-002",
+    "unitKey": "unit1",
+    "chinese": "千克；公斤（缩略形式kg）",
+    "english": "kilogram",
+    "sort": 2
+  },
+  {
+    "id": "g6-lower-u01-003",
+    "unitKey": "unit1",
+    "chinese": "厘米（缩略形式 cm）",
+    "english": "centimeter",
+    "sort": 3
+  },
+  {
+    "id": "g6-lower-u01-004",
+    "unitKey": "unit1",
+    "chinese": "更高的",
+    "english": "taller",
+    "sort": 4
+  },
+  {
+    "id": "g6-lower-u01-005",
+    "unitKey": "unit1",
+    "chinese": "（足球 、电影等） 迷；爱好者",
+    "english": "fan",
+    "sort": 5
+  },
+  {
+    "id": "g6-lower-u01-006",
+    "unitKey": "unit1",
+    "chinese": "极好的",
+    "english": "fantastic",
+    "sort": 6
+  },
+  {
+    "id": "g6-lower-u01-007",
+    "unitKey": "unit1",
+    "chinese": "他们自己； 她们自己；它们自己",
+    "english": "themselves",
+    "sort": 7
+  },
+  {
+    "id": "g6-lower-u01-008",
+    "unitKey": "unit1",
+    "chinese": "剧院",
+    "english": "theatre",
+    "sort": 8
+  },
+  {
+    "id": "g6-lower-u01-009",
+    "unitKey": "unit1",
+    "chinese": "去钓鱼",
+    "english": "go fishing",
+    "sort": 9
+  },
+  {
+    "id": "g6-lower-u01-010",
+    "unitKey": "unit1",
+    "chinese": "玩得愉快；得到乐趣",
+    "english": "enjoy oneself",
+    "sort": 10
+  },
+  {
+    "id": "g6-lower-u01-011",
+    "unitKey": "unit1",
+    "chinese": "收割",
+    "english": "get…in",
+    "sort": 11
+  },
+  {
+    "id": "g6-lower-u02-001",
+    "unitKey": "unit2",
+    "chinese": "生活",
+    "english": "life",
+    "sort": 1
+  },
+  {
+    "id": "g6-lower-u02-002",
+    "unitKey": "unit2",
+    "chinese": "作家",
+    "english": "writer",
+    "sort": 2
+  },
+  {
+    "id": "g6-lower-u02-003",
+    "unitKey": "unit2",
+    "chinese": "摄像师",
+    "english": "photographer",
+    "sort": 3
+  },
+  {
+    "id": "g6-lower-u02-004",
+    "unitKey": "unit2",
+    "chinese": "胶卷",
+    "english": "film",
+    "sort": 4
+  },
+  {
+    "id": "g6-lower-u02-005",
+    "unitKey": "unit2",
+    "chinese": "数码的",
+    "english": "digital",
+    "sort": 5
+  },
+  {
+    "id": "g6-lower-u02-006",
+    "unitKey": "unit2",
+    "chinese": "环卫工人",
+    "english": "street cleaner",
+    "sort": 6
+  },
+  {
+    "id": "g6-lower-u02-007",
+    "unitKey": "unit2",
+    "chinese": "扫地",
+    "english": "sweep",
+    "sort": 7
+  },
+  {
+    "id": "g6-lower-u02-008",
+    "unitKey": "unit2",
+    "chinese": "扫帚",
+    "english": "broom",
+    "sort": 8
+  },
+  {
+    "id": "g6-lower-u02-009",
+    "unitKey": "unit2",
+    "chinese": "驾驶",
+    "english": "drive",
+    "sort": 9
+  },
+  {
+    "id": "g6-lower-u02-010",
+    "unitKey": "unit2",
+    "chinese": "扫地车",
+    "english": "street sweeper",
+    "sort": 10
+  },
+  {
+    "id": "g6-lower-u02-011",
+    "unitKey": "unit2",
+    "chinese": "妻子",
+    "english": "wife",
+    "sort": 11
+  },
+  {
+    "id": "g6-lower-u02-012",
+    "unitKey": "unit2",
+    "chinese": "贫穷的；差的；次的",
+    "english": "poor",
+    "sort": 12
+  },
+  {
+    "id": "g6-lower-u02-013",
+    "unitKey": "unit2",
+    "chinese": "仙子；小精灵",
+    "english": "fairy",
+    "sort": 13
+  },
+  {
+    "id": "g6-lower-u02-014",
+    "unitKey": "unit2",
+    "chinese": "愿望；祝愿",
+    "english": "wish",
+    "sort": 14
+  },
+  {
+    "id": "g6-lower-u02-015",
+    "unitKey": "unit2",
+    "chinese": "用手",
+    "english": "by hand",
+    "sort": 15
+  },
+  {
+    "id": "g6-lower-u02-016",
+    "unitKey": "unit2",
+    "chinese": "立即；马上",
+    "english": "right away",
+    "sort": 16
+  },
+  {
+    "id": "g6-lower-u02-017",
+    "unitKey": "unit2",
+    "chinese": "很快",
+    "english": "in a short time",
+    "sort": 17
+  },
+  {
+    "id": "g6-lower-u03-001",
+    "unitKey": "unit3",
+    "chinese": "背 ；提；拿",
+    "english": "carry",
+    "sort": 1
+  },
+  {
+    "id": "g6-lower-u03-002",
+    "unitKey": "unit3",
+    "chinese": "在线地；在线的",
+    "english": "online",
+    "sort": 2
+  },
+  {
+    "id": "g6-lower-u03-003",
+    "unitKey": "unit3",
+    "chinese": "校长",
+    "english": "head teacher",
+    "sort": 3
+  },
+  {
+    "id": "g6-lower-u03-004",
+    "unitKey": "unit3",
+    "chinese": "附言（用于信末）",
+    "english": "PS",
+    "sort": 4
+  },
+  {
+    "id": "g6-lower-u03-005",
+    "unitKey": "unit3",
+    "chinese": "山；山脉",
+    "english": "mountain",
+    "sort": 5
+  },
+  {
+    "id": "g6-lower-u03-006",
+    "unitKey": "unit3",
+    "chinese": "甚至",
+    "english": "even",
+    "sort": 6
+  },
+  {
+    "id": "g6-lower-u03-007",
+    "unitKey": "unit3",
+    "chinese": "太空",
+    "english": "space",
+    "sort": 7
+  },
+  {
+    "id": "g6-lower-u03-008",
+    "unitKey": "unit3",
+    "chinese": "恐龙",
+    "english": "dinosaur",
+    "sort": 8
+  },
+  {
+    "id": "g6-lower-u03-009",
+    "unitKey": "unit3",
+    "chinese": "一张； 一片",
+    "english": "a piece of",
+    "sort": 9
+  },
+  {
+    "id": "g6-lower-u03-010",
+    "unitKey": "unit3",
+    "chinese": "去野餐",
+    "english": "have a picnic",
+    "sort": 10
+  },
+  {
+    "id": "g6-lower-u03-011",
+    "unitKey": "unit3",
+    "chinese": "越来越好",
+    "english": "better and better",
+    "sort": 11
+  },
+  {
+    "id": "g6-lower-u04-001",
+    "unitKey": "unit4",
+    "chinese": "油",
+    "english": "oil",
+    "sort": 1
+  },
+  {
+    "id": "g6-lower-u04-002",
+    "unitKey": "unit4",
+    "chinese": "油画",
+    "english": "oil painting",
+    "sort": 2
+  },
+  {
+    "id": "g6-lower-u04-003",
+    "unitKey": "unit4",
+    "chinese": "强有力的； 力量大的",
+    "english": "powerful",
+    "sort": 3
+  },
+  {
+    "id": "g6-lower-u04-004",
+    "unitKey": "unit4",
+    "chinese": "墨水；墨汁",
+    "english": "ink",
+    "sort": 4
+  },
+  {
+    "id": "g6-lower-u04-005",
+    "unitKey": "unit4",
+    "chinese": "中国水墨画",
+    "english": "Chinese ink painting",
+    "sort": 5
+  },
+  {
+    "id": "g6-lower-u04-006",
+    "unitKey": "unit4",
+    "chinese": "画笔；刷子；刷",
+    "english": "brush",
+    "sort": 6
+  },
+  {
+    "id": "g6-lower-u04-007",
+    "unitKey": "unit4",
+    "chinese": "绘画颜料",
+    "english": "paints",
+    "sort": 7
+  },
+  {
+    "id": "g6-lower-u04-008",
+    "unitKey": "unit4",
+    "chinese": "艺术家； 尤指（画家）",
+    "english": "artist",
+    "sort": 8
+  },
+  {
+    "id": "g6-lower-u04-009",
+    "unitKey": "unit4",
+    "chinese": "不高兴的",
+    "english": "unhappy",
+    "sort": 9
+  },
+  {
+    "id": "g6-lower-u04-010",
+    "unitKey": "unit4",
+    "chinese": "仔细地",
+    "english": "carefully",
+    "sort": 10
+  },
+  {
+    "id": "g6-lower-u04-011",
+    "unitKey": "unit4",
+    "chinese": "在左边",
+    "english": "on the left",
+    "sort": 11
+  },
+  {
+    "id": "g6-lower-u04-012",
+    "unitKey": "unit4",
+    "chinese": "在右边",
+    "english": "on the right",
+    "sort": 12
+  },
+  {
+    "id": "g6-lower-u04-013",
+    "unitKey": "unit4",
+    "chinese": "一直；始终",
+    "english": "all the time",
+    "sort": 13
+  },
+  {
+    "id": "g6-lower-u05-001",
+    "unitKey": "unit5",
+    "chinese": "手艺； 工艺",
+    "english": "craft",
+    "sort": 1
+  },
+  {
+    "id": "g6-lower-u05-002",
+    "unitKey": "unit5",
+    "chinese": "王冠； 皇冠",
+    "english": "crown",
+    "sort": 2
+  },
+  {
+    "id": "g6-lower-u05-003",
+    "unitKey": "unit5",
+    "chinese": "剪刀",
+    "english": "scissors",
+    "sort": 3
+  },
+  {
+    "id": "g6-lower-u05-004",
+    "unitKey": "unit5",
+    "chinese": "胶带",
+    "english": "tape",
+    "sort": 4
+  },
+  {
+    "id": "g6-lower-u05-005",
+    "unitKey": "unit5",
+    "chinese": "胶水",
+    "english": "glue",
+    "sort": 5
+  },
+  {
+    "id": "g6-lower-u05-006",
+    "unitKey": "unit5",
+    "chinese": "锯",
+    "english": "saw",
+    "sort": 6
+  },
+  {
+    "id": "g6-lower-u05-007",
+    "unitKey": "unit5",
+    "chinese": "工 匠 ；手 艺 人（复 数craftsmen）",
+    "english": "craftsman",
+    "sort": 7
+  },
+  {
+    "id": "g6-lower-u05-008",
+    "unitKey": "unit5",
+    "chinese": "工具",
+    "english": "tool",
+    "sort": 8
+  },
+  {
+    "id": "g6-lower-u05-009",
+    "unitKey": "unit5",
+    "chinese": "容易地",
+    "english": "easily",
+    "sort": 9
+  },
+  {
+    "id": "g6-lower-u05-010",
+    "unitKey": "unit5",
+    "chinese": "他自己",
+    "english": "himself",
+    "sort": 10
+  },
+  {
+    "id": "g6-lower-u05-011",
+    "unitKey": "unit5",
+    "chinese": "仍然",
+    "english": "still",
+    "sort": 11
+  },
+  {
+    "id": "g6-lower-u05-012",
+    "unitKey": "unit5",
+    "chinese": "房子模型",
+    "english": "model house",
+    "sort": 12
+  },
+  {
+    "id": "g6-lower-u05-013",
+    "unitKey": "unit5",
+    "chinese": "很久以前",
+    "english": "a long time ago",
+    "sort": 13
+  },
+  {
+    "id": "g6-lower-u05-014",
+    "unitKey": "unit5",
+    "chinese": "忙着（做事情）",
+    "english": "at work",
+    "sort": 14
+  },
+  {
+    "id": "g6-lower-u05-015",
+    "unitKey": "unit5",
+    "chinese": "自言自语",
+    "english": "say to oneself",
+    "sort": 15
+  },
+  {
+    "id": "g6-lower-u06-001",
+    "unitKey": "unit6",
+    "chinese": "长跑",
+    "english": "long race",
+    "sort": 1
+  },
+  {
+    "id": "g6-lower-u06-002",
+    "unitKey": "unit6",
+    "chinese": "短跑",
+    "english": "short race",
+    "sort": 2
+  },
+  {
+    "id": "g6-lower-u06-003",
+    "unitKey": "unit6",
+    "chinese": "获胜；赢",
+    "english": "win",
+    "sort": 3
+  },
+  {
+    "id": "g6-lower-u06-004",
+    "unitKey": "unit6",
+    "chinese": "跳远",
+    "english": "long jump",
+    "sort": 4
+  },
+  {
+    "id": "g6-lower-u06-005",
+    "unitKey": "unit6",
+    "chinese": "跳高",
+    "english": "high jump",
+    "sort": 5
+  },
+  {
+    "id": "g6-lower-u06-006",
+    "unitKey": "unit6",
+    "chinese": "（尤指女式的）游泳衣",
+    "english": "swimsuit",
+    "sort": 6
+  },
+  {
+    "id": "g6-lower-u06-007",
+    "unitKey": "unit6",
+    "chinese": "游泳帽",
+    "english": "swimming cap",
+    "sort": 7
+  },
+  {
+    "id": "g6-lower-u06-008",
+    "unitKey": "unit6",
+    "chinese": "游泳池",
+    "english": "swimming pool",
+    "sort": 8
+  },
+  {
+    "id": "g6-lower-u06-009",
+    "unitKey": "unit6",
+    "chinese": "准备活动；热身练习",
+    "english": "warm-up",
+    "sort": 9
+  },
+  {
+    "id": "g6-lower-u06-010",
+    "unitKey": "unit6",
+    "chinese": "健壮的",
+    "english": "fit",
+    "sort": 10
+  },
+  {
+    "id": "g6-lower-u06-011",
+    "unitKey": "unit6",
+    "chinese": "游泳镜",
+    "english": "swimming goggles",
+    "sort": 11
+  },
+  {
+    "id": "g6-lower-u07-001",
+    "unitKey": "unit7",
+    "chinese": "铃铛",
+    "english": "bell",
+    "sort": 1
+  },
+  {
+    "id": "g6-lower-u07-002",
+    "unitKey": "unit7",
+    "chinese": "脖子",
+    "english": "neck",
+    "sort": 2
+  },
+  {
+    "id": "g6-lower-u07-003",
+    "unitKey": "unit7",
+    "chinese": "以前",
+    "english": "ago",
+    "sort": 3
+  },
+  {
+    "id": "g6-lower-u07-004",
+    "unitKey": "unit7",
+    "chinese": "门卫",
+    "english": "gatekeeper",
+    "sort": 4
+  },
+  {
+    "id": "g6-lower-u07-005",
+    "unitKey": "unit7",
+    "chinese": "赞扬；称赞",
+    "english": "praise",
+    "sort": 5
+  },
+  {
+    "id": "g6-lower-u07-006",
+    "unitKey": "unit7",
+    "chinese": "因……而表扬 … …",
+    "english": "praise…for …",
+    "sort": 6
+  },
+  {
+    "id": "g6-lower-u08-001",
+    "unitKey": "unit8",
+    "chinese": "标识",
+    "english": "sign",
+    "sort": 1
+  },
+  {
+    "id": "g6-lower-u08-002",
+    "unitKey": "unit8",
+    "chinese": "中间；中部；中心",
+    "english": "middle",
+    "sort": 2
+  },
+  {
+    "id": "g6-lower-u08-003",
+    "unitKey": "unit8",
+    "chinese": "特别的",
+    "english": "special",
+    "sort": 3
+  },
+  {
+    "id": "g6-lower-u08-004",
+    "unitKey": "unit8",
+    "chinese": "小路；小径",
+    "english": "path",
+    "sort": 4
+  },
+  {
+    "id": "g6-lower-u08-005",
+    "unitKey": "unit8",
+    "chinese": "可能； 可以",
+    "english": "may",
+    "sort": 5
+  },
+  {
+    "id": "g6-lower-u08-006",
+    "unitKey": "unit8",
+    "chinese": "迷路的；迷失的",
+    "english": "lost",
+    "sort": 6
+  },
+  {
+    "id": "g6-lower-u08-007",
+    "unitKey": "unit8",
+    "chinese": "担心",
+    "english": "worry",
+    "sort": 7
+  },
+  {
+    "id": "g6-lower-u08-008",
+    "unitKey": "unit8",
+    "chinese": "跟随；跟着",
+    "english": "follow",
+    "sort": 8
+  },
+  {
+    "id": "g6-lower-u08-009",
+    "unitKey": "unit8",
+    "chinese": "在中间",
+    "english": "in the middle",
+    "sort": 9
+  },
+  {
+    "id": "g6-lower-u08-010",
+    "unitKey": "unit8",
+    "chinese": "小心；当心",
+    "english": "look out",
+    "sort": 10
+  },
+  {
+    "id": "g6-lower-u08-011",
+    "unitKey": "unit8",
+    "chinese": "禁止吸烟",
+    "english": "no smoking",
+    "sort": 11
+  },
+  {
+    "id": "g6-lower-u08-012",
+    "unitKey": "unit8",
+    "chinese": "禁止游泳",
+    "english": "no swimming",
+    "sort": 12
+  },
+  {
+    "id": "g6-lower-u08-013",
+    "unitKey": "unit8",
+    "chinese": "迷路",
+    "english": "get lost",
+    "sort": 13
+  },
+  {
+    "id": "g6-lower-u08-014",
+    "unitKey": "unit8",
+    "chinese": "一段时间",
+    "english": "some time",
+    "sort": 14
+  },
+  {
+    "id": "g6-lower-u08-015",
+    "unitKey": "unit8",
+    "chinese": "在路上",
+    "english": "on the way",
+    "sort": 15
+  },
+  {
+    "id": "g6-lower-u09-001",
+    "unitKey": "unit9",
+    "chinese": "重新利用",
+    "english": "reuse",
+    "sort": 1
+  },
+  {
+    "id": "g6-lower-u09-002",
+    "unitKey": "unit9",
+    "chinese": "金属罐",
+    "english": "can",
+    "sort": 2
+  },
+  {
+    "id": "g6-lower-u09-003",
+    "unitKey": "unit9",
+    "chinese": "橡皮",
+    "english": "rubber",
+    "sort": 3
+  },
+  {
+    "id": "g6-lower-u09-004",
+    "unitKey": "unit9",
+    "chinese": "花瓶",
+    "english": "vase",
+    "sort": 4
+  },
+  {
+    "id": "g6-lower-u09-005",
+    "unitKey": "unit9",
+    "chinese": "笔筒",
+    "english": "pen holder",
+    "sort": 5
+  },
+  {
+    "id": "g6-lower-u09-006",
+    "unitKey": "unit9",
+    "chinese": "信封",
+    "english": "envelope",
+    "sort": 6
+  },
+  {
+    "id": "g6-lower-u09-007",
+    "unitKey": "unit9",
+    "chinese": "塑料制的； 塑料的",
+    "english": "plastic",
+    "sort": 7
+  },
+  {
+    "id": "g6-lower-u09-008",
+    "unitKey": "unit9",
+    "chinese": "垃圾桶",
+    "english": "rubbish bin",
+    "sort": 8
+  },
+  {
+    "id": "g6-lower-u09-009",
+    "unitKey": "unit9",
+    "chinese": "卡车",
+    "english": "truck",
+    "sort": 9
+  },
+  {
+    "id": "g6-lower-u09-010",
+    "unitKey": "unit9",
+    "chinese": "碎片；碎块",
+    "english": "piece",
+    "sort": 10
+  },
+  {
+    "id": "g6-lower-u09-011",
+    "unitKey": "unit9",
+    "chinese": "布；布料",
+    "english": "cloth",
+    "sort": 11
+  },
+  {
+    "id": "g6-lower-u09-012",
+    "unitKey": "unit9",
+    "chinese": "扔掉",
+    "english": "throw away",
+    "sort": 12
+  },
+  {
+    "id": "g6-lower-u10-001",
+    "unitKey": "unit10",
+    "chinese": "童话（故事）",
+    "english": "fairy tale",
+    "sort": 1
+  },
+  {
+    "id": "g6-lower-u10-002",
+    "unitKey": "unit10",
+    "chinese": "成年人",
+    "english": "adult",
+    "sort": 2
+  },
+  {
+    "id": "g6-lower-u10-003",
+    "unitKey": "unit10",
+    "chinese": "众所周知的； 著名的",
+    "english": "well-known",
+    "sort": 3
+  },
+  {
+    "id": "g6-lower-u10-004",
+    "unitKey": "unit10",
+    "chinese": "更强大的",
+    "english": "stronger",
+    "sort": 4
+  },
+  {
+    "id": "g6-lower-u10-005",
+    "unitKey": "unit10",
+    "chinese": "比",
+    "english": "than",
+    "sort": 5
+  },
+  {
+    "id": "g6-lower-u10-006",
+    "unitKey": "unit10",
+    "chinese": "围 巾 （复 数 scarves 或scarfs）",
+    "english": "scarf",
+    "sort": 6
+  },
+  {
+    "id": "g6-lower-u10-007",
+    "unitKey": "unit10",
+    "chinese": "吹掉",
+    "english": "blow off",
+    "sort": 7
+  },
+  {
+    "id": "g6-lower-u10-008",
+    "unitKey": "unit10",
+    "chinese": "脱掉",
+    "english": "take off",
+    "sort": 8
+  },
+  {
+    "id": "g6-lower-u11-001",
+    "unitKey": "unit11",
+    "chinese": "西方的",
+    "english": "Western",
+    "sort": 1
+  },
+  {
+    "id": "g6-lower-u11-002",
+    "unitKey": "unit11",
+    "chinese": "火鸡",
+    "english": "turkey",
+    "sort": 2
+  },
+  {
+    "id": "g6-lower-u11-003",
+    "unitKey": "unit11",
+    "chinese": "明亮的；鲜艳的",
+    "english": "bright",
+    "sort": 3
+  },
+  {
+    "id": "g6-lower-u11-004",
+    "unitKey": "unit11",
+    "chinese": "嘲笑",
+    "english": "laugh at",
+    "sort": 4
+  },
+  {
+    "id": "g6-lower-u11-005",
+    "unitKey": "unit11",
+    "chinese": "南瓜灯",
+    "english": "jack-o ’-lantern",
+    "sort": 5
+  },
+  {
+    "id": "g6-lower-u12-001",
+    "unitKey": "unit12",
+    "chinese": "豌豆",
+    "english": "pea",
+    "sort": 1
+  },
+  {
+    "id": "g6-lower-u12-002",
+    "unitKey": "unit12",
+    "chinese": "豆荚",
+    "english": "pod",
+    "sort": 2
+  },
+  {
+    "id": "g6-lower-u12-003",
+    "unitKey": "unit12",
+    "chinese": "永远",
+    "english": "forever",
+    "sort": 3
+  },
+  {
+    "id": "g6-lower-u12-004",
+    "unitKey": "unit12",
+    "chinese": "更大的",
+    "english": "bigger",
+    "sort": 4
+  },
+  {
+    "id": "g6-lower-u12-005",
+    "unitKey": "unit12",
+    "chinese": "兴奋的",
+    "english": "excited",
+    "sort": 5
+  },
+  {
+    "id": "g6-lower-u12-006",
+    "unitKey": "unit12",
+    "chinese": "子弹",
+    "english": "bullet",
+    "sort": 6
+  },
+  {
+    "id": "g6-lower-u12-007",
+    "unitKey": "unit12",
+    "chinese": "懒惰的",
+    "english": "lazy",
+    "sort": 7
+  },
+  {
+    "id": "g6-lower-u12-008",
+    "unitKey": "unit12",
+    "chinese": "屋顶",
+    "english": "roof",
+    "sort": 8
+  },
+  {
+    "id": "g6-lower-u12-009",
+    "unitKey": "unit12",
+    "chinese": "院子",
+    "english": "yard",
+    "sort": 9
+  },
+  {
+    "id": "g6-lower-u12-010",
+    "unitKey": "unit12",
+    "chinese": "碰撞；撞击",
+    "english": "hit",
+    "sort": 10
+  },
+  {
+    "id": "g6-lower-u12-011",
+    "unitKey": "unit12",
+    "chinese": "见世面",
+    "english": "see the world",
+    "sort": 11
+  },
+  {
+    "id": "g6-lower-u12-012",
+    "unitKey": "unit12",
+    "chinese": "一个接一个地",
+    "english": "one by one",
+    "sort": 12
+  },
+  {
+    "id": "g6-lower-u12-013",
+    "unitKey": "unit12",
+    "chinese": "往外看",
+    "english": "look out of",
+    "sort": 13
+  }
+]

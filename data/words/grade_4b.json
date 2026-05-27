@@ -1,0 +1,1052 @@
+[
+  {
+    "id": "g4-lower-u01-001",
+    "unitKey": "unit1",
+    "chinese": "碰；触摸",
+    "english": "touch",
+    "sort": 1
+  },
+  {
+    "id": "g4-lower-u01-002",
+    "unitKey": "unit1",
+    "chinese": "摸起来；感到",
+    "english": "feel",
+    "sort": 2
+  },
+  {
+    "id": "g4-lower-u01-003",
+    "unitKey": "unit1",
+    "chinese": "柔软的",
+    "english": "soft",
+    "sort": 3
+  },
+  {
+    "id": "g4-lower-u01-004",
+    "unitKey": "unit1",
+    "chinese": "坚硬的",
+    "english": "hard",
+    "sort": 4
+  },
+  {
+    "id": "g4-lower-u01-005",
+    "unitKey": "unit1",
+    "chinese": "厚的；粗的",
+    "english": "thick",
+    "sort": 5
+  },
+  {
+    "id": "g4-lower-u01-006",
+    "unitKey": "unit1",
+    "chinese": "薄的；细的",
+    "english": "thin",
+    "sort": 6
+  },
+  {
+    "id": "g4-lower-u01-007",
+    "unitKey": "unit1",
+    "chinese": "瞎的；失明的",
+    "english": "blind",
+    "sort": 7
+  },
+  {
+    "id": "g4-lower-u01-008",
+    "unitKey": "unit1",
+    "chinese": "响声；吵闹声",
+    "english": "noise",
+    "sort": 8
+  },
+  {
+    "id": "g4-lower-u01-009",
+    "unitKey": "unit1",
+    "chinese": "年轻的",
+    "english": "young",
+    "sort": 9
+  },
+  {
+    "id": "g4-lower-u02-001",
+    "unitKey": "unit2",
+    "chinese": "闻；嗅",
+    "english": "smell",
+    "sort": 1
+  },
+  {
+    "id": "g4-lower-u02-002",
+    "unitKey": "unit2",
+    "chinese": "草莓",
+    "english": "strawberry",
+    "sort": 2
+  },
+  {
+    "id": "g4-lower-u02-003",
+    "unitKey": "unit2",
+    "chinese": "或者；还是",
+    "english": "or",
+    "sort": 3
+  },
+  {
+    "id": "g4-lower-u02-004",
+    "unitKey": "unit2",
+    "chinese": "西瓜",
+    "english": "watermelon",
+    "sort": 4
+  },
+  {
+    "id": "g4-lower-u02-005",
+    "unitKey": "unit2",
+    "chinese": "葡萄",
+    "english": "grape",
+    "sort": 5
+  },
+  {
+    "id": "g4-lower-u02-006",
+    "unitKey": "unit2",
+    "chinese": "狐狸",
+    "english": "fox",
+    "sort": 6
+  },
+  {
+    "id": "g4-lower-u02-007",
+    "unitKey": "unit2",
+    "chinese": "圆的",
+    "english": "round",
+    "sort": 7
+  },
+  {
+    "id": "g4-lower-u02-008",
+    "unitKey": "unit2",
+    "chinese": "紫色的",
+    "english": "purple",
+    "sort": 8
+  },
+  {
+    "id": "g4-lower-u02-009",
+    "unitKey": "unit2",
+    "chinese": "等待；等候",
+    "english": "wait",
+    "sort": 9
+  },
+  {
+    "id": "g4-lower-u02-010",
+    "unitKey": "unit2",
+    "chinese": "一会儿；分钟",
+    "english": "minute",
+    "sort": 10
+  },
+  {
+    "id": "g4-lower-u02-011",
+    "unitKey": "unit2",
+    "chinese": "得到",
+    "english": "get",
+    "sort": 11
+  },
+  {
+    "id": "g4-lower-u02-012",
+    "unitKey": "unit2",
+    "chinese": "那些",
+    "english": "those",
+    "sort": 12
+  },
+  {
+    "id": "g4-lower-u03-001",
+    "unitKey": "unit3",
+    "chinese": "升起",
+    "english": "rise",
+    "sort": 1
+  },
+  {
+    "id": "g4-lower-u03-002",
+    "unitKey": "unit3",
+    "chinese": "影子",
+    "english": "shadow",
+    "sort": 2
+  },
+  {
+    "id": "g4-lower-u03-003",
+    "unitKey": "unit3",
+    "chinese": "中午",
+    "english": "noon",
+    "sort": 3
+  },
+  {
+    "id": "g4-lower-u03-004",
+    "unitKey": "unit3",
+    "chinese": "高的",
+    "english": "high",
+    "sort": 4
+  },
+  {
+    "id": "g4-lower-u03-005",
+    "unitKey": "unit3",
+    "chinese": "天空",
+    "english": "sky",
+    "sort": 5
+  },
+  {
+    "id": "g4-lower-u03-006",
+    "unitKey": "unit3",
+    "chinese": "傍晚；晚上",
+    "english": "evening",
+    "sort": 6
+  },
+  {
+    "id": "g4-lower-u03-007",
+    "unitKey": "unit3",
+    "chinese": "再；又",
+    "english": "again",
+    "sort": 7
+  },
+  {
+    "id": "g4-lower-u03-008",
+    "unitKey": "unit3",
+    "chinese": "夜晚",
+    "english": "night",
+    "sort": 8
+  },
+  {
+    "id": "g4-lower-u03-009",
+    "unitKey": "unit3",
+    "chinese": "月亮",
+    "english": "moon",
+    "sort": 9
+  },
+  {
+    "id": "g4-lower-u03-010",
+    "unitKey": "unit3",
+    "chinese": "他",
+    "english": "him",
+    "sort": 10
+  },
+  {
+    "id": "g4-lower-u03-011",
+    "unitKey": "unit3",
+    "chinese": "停下",
+    "english": "stop",
+    "sort": 11
+  },
+  {
+    "id": "g4-lower-u03-012",
+    "unitKey": "unit3",
+    "chinese": "在中午",
+    "english": "at noon",
+    "sort": 12
+  },
+  {
+    "id": "g4-lower-u03-013",
+    "unitKey": "unit3",
+    "chinese": "落下",
+    "english": "go down",
+    "sort": 13
+  },
+  {
+    "id": "g4-lower-u03-014",
+    "unitKey": "unit3",
+    "chinese": "在夜晚",
+    "english": "at night",
+    "sort": 14
+  },
+  {
+    "id": "g4-lower-u03-015",
+    "unitKey": "unit3",
+    "chinese": "散步",
+    "english": "take a walk",
+    "sort": 15
+  },
+  {
+    "id": "g4-lower-u04-001",
+    "unitKey": "unit4",
+    "chinese": "学科；科目",
+    "english": "subject",
+    "sort": 1
+  },
+  {
+    "id": "g4-lower-u04-002",
+    "unitKey": "unit4",
+    "chinese": "课",
+    "english": "lesson",
+    "sort": 2
+  },
+  {
+    "id": "g4-lower-u04-003",
+    "unitKey": "unit4",
+    "chinese": "（学科）语文",
+    "english": "Chinese",
+    "sort": 3
+  },
+  {
+    "id": "g4-lower-u04-004",
+    "unitKey": "unit4",
+    "chinese": "（学科）数学",
+    "english": "Maths",
+    "sort": 4
+  },
+  {
+    "id": "g4-lower-u04-005",
+    "unitKey": "unit4",
+    "chinese": "（学科）英语",
+    "english": "English",
+    "sort": 5
+  },
+  {
+    "id": "g4-lower-u04-006",
+    "unitKey": "unit4",
+    "chinese": "（学科）科学",
+    "english": "Science",
+    "sort": 6
+  },
+  {
+    "id": "g4-lower-u04-007",
+    "unitKey": "unit4",
+    "chinese": "（学科）体育",
+    "english": "PE",
+    "sort": 7
+  },
+  {
+    "id": "g4-lower-u04-008",
+    "unitKey": "unit4",
+    "chinese": "（学科）音乐",
+    "english": "Music",
+    "sort": 8
+  },
+  {
+    "id": "g4-lower-u04-009",
+    "unitKey": "unit4",
+    "chinese": "（学科）美术",
+    "english": "Art",
+    "sort": 9
+  },
+  {
+    "id": "g4-lower-u04-010",
+    "unitKey": "unit4",
+    "chinese": "课程表；时间表",
+    "english": "timetable",
+    "sort": 10
+  },
+  {
+    "id": "g4-lower-u04-011",
+    "unitKey": "unit4",
+    "chinese": "从；来自",
+    "english": "from",
+    "sort": 11
+  },
+  {
+    "id": "g4-lower-u04-012",
+    "unitKey": "unit4",
+    "chinese": "上午",
+    "english": "a.m.",
+    "sort": 12
+  },
+  {
+    "id": "g4-lower-u04-013",
+    "unitKey": "unit4",
+    "chinese": "下午",
+    "english": "p.m.",
+    "sort": 13
+  },
+  {
+    "id": "g4-lower-u04-014",
+    "unitKey": "unit4",
+    "chinese": "休息",
+    "english": "break",
+    "sort": 14
+  },
+  {
+    "id": "g4-lower-u04-015",
+    "unitKey": "unit4",
+    "chinese": "从……到……",
+    "english": "from…to…",
+    "sort": 15
+  },
+  {
+    "id": "g4-lower-u05-001",
+    "unitKey": "unit5",
+    "chinese": "体育运动",
+    "english": "sport",
+    "sort": 1
+  },
+  {
+    "id": "g4-lower-u05-002",
+    "unitKey": "unit5",
+    "chinese": "足球",
+    "english": "football",
+    "sort": 2
+  },
+  {
+    "id": "g4-lower-u05-003",
+    "unitKey": "unit5",
+    "chinese": "俱乐部；兴趣小组",
+    "english": "club",
+    "sort": 3
+  },
+  {
+    "id": "g4-lower-u05-004",
+    "unitKey": "unit5",
+    "chinese": "参加；加入",
+    "english": "join",
+    "sort": 4
+  },
+  {
+    "id": "g4-lower-u05-005",
+    "unitKey": "unit5",
+    "chinese": "告诉",
+    "english": "tell",
+    "sort": 5
+  },
+  {
+    "id": "g4-lower-u05-006",
+    "unitKey": "unit5",
+    "chinese": "关于",
+    "english": "about",
+    "sort": 6
+  },
+  {
+    "id": "g4-lower-u05-007",
+    "unitKey": "unit5",
+    "chinese": "篮球",
+    "english": "basketball",
+    "sort": 7
+  },
+  {
+    "id": "g4-lower-u05-008",
+    "unitKey": "unit5",
+    "chinese": "排球",
+    "english": "volleyball",
+    "sort": 8
+  },
+  {
+    "id": "g4-lower-u05-009",
+    "unitKey": "unit5",
+    "chinese": "我们",
+    "english": "us",
+    "sort": 9
+  },
+  {
+    "id": "g4-lower-u05-010",
+    "unitKey": "unit5",
+    "chinese": "乒乓球运动",
+    "english": "table tennis",
+    "sort": 10
+  },
+  {
+    "id": "g4-lower-u05-011",
+    "unitKey": "unit5",
+    "chinese": "踢足球",
+    "english": "play football",
+    "sort": 11
+  },
+  {
+    "id": "g4-lower-u05-012",
+    "unitKey": "unit5",
+    "chinese": "打篮球",
+    "english": "play basketball",
+    "sort": 12
+  },
+  {
+    "id": "g4-lower-u05-013",
+    "unitKey": "unit5",
+    "chinese": "打排球",
+    "english": "play volleyball",
+    "sort": 13
+  },
+  {
+    "id": "g4-lower-u06-001",
+    "unitKey": "unit6",
+    "chinese": "使人愉悦的；绝妙的",
+    "english": "wonderful",
+    "sort": 1
+  },
+  {
+    "id": "g4-lower-u06-002",
+    "unitKey": "unit6",
+    "chinese": "小提琴",
+    "english": "violin",
+    "sort": 2
+  },
+  {
+    "id": "g4-lower-u06-003",
+    "unitKey": "unit6",
+    "chinese": "吉他",
+    "english": "guitar",
+    "sort": 3
+  },
+  {
+    "id": "g4-lower-u06-004",
+    "unitKey": "unit6",
+    "chinese": "谁的",
+    "english": "whose",
+    "sort": 4
+  },
+  {
+    "id": "g4-lower-u06-005",
+    "unitKey": "unit6",
+    "chinese": "钢琴",
+    "english": "piano",
+    "sort": 5
+  },
+  {
+    "id": "g4-lower-u06-006",
+    "unitKey": "unit6",
+    "chinese": "城市",
+    "english": "city",
+    "sort": 6
+  },
+  {
+    "id": "g4-lower-u06-007",
+    "unitKey": "unit6",
+    "chinese": "袋子",
+    "english": "bag",
+    "sort": 7
+  },
+  {
+    "id": "g4-lower-u06-008",
+    "unitKey": "unit6",
+    "chinese": "金子",
+    "english": "gold",
+    "sort": 8
+  },
+  {
+    "id": "g4-lower-u06-009",
+    "unitKey": "unit6",
+    "chinese": "全部；所有",
+    "english": "all",
+    "sort": 9
+  },
+  {
+    "id": "g4-lower-u06-010",
+    "unitKey": "unit6",
+    "chinese": "拉小提琴",
+    "english": "play the violin",
+    "sort": 10
+  },
+  {
+    "id": "g4-lower-u06-011",
+    "unitKey": "unit6",
+    "chinese": "弹吉他",
+    "english": "play the guitar",
+    "sort": 11
+  },
+  {
+    "id": "g4-lower-u07-001",
+    "unitKey": "unit7",
+    "chinese": "……点钟",
+    "english": "o'clock",
+    "sort": 1
+  },
+  {
+    "id": "g4-lower-u07-002",
+    "unitKey": "unit7",
+    "chinese": "一刻钟",
+    "english": "quarter",
+    "sort": 2
+  },
+  {
+    "id": "g4-lower-u07-003",
+    "unitKey": "unit7",
+    "chinese": "时间",
+    "english": "time",
+    "sort": 3
+  },
+  {
+    "id": "g4-lower-u07-004",
+    "unitKey": "unit7",
+    "chinese": "半；一半",
+    "english": "half",
+    "sort": 4
+  },
+  {
+    "id": "g4-lower-u07-005",
+    "unitKey": "unit7",
+    "chinese": "洗",
+    "english": "wash",
+    "sort": 5
+  },
+  {
+    "id": "g4-lower-u07-006",
+    "unitKey": "unit7",
+    "chinese": "晚餐；正餐",
+    "english": "dinner",
+    "sort": 6
+  },
+  {
+    "id": "g4-lower-u07-007",
+    "unitKey": "unit7",
+    "chinese": "开始",
+    "english": "start",
+    "sort": 7
+  },
+  {
+    "id": "g4-lower-u07-008",
+    "unitKey": "unit7",
+    "chinese": "捉住",
+    "english": "catch",
+    "sort": 8
+  },
+  {
+    "id": "g4-lower-u07-009",
+    "unitKey": "unit7",
+    "chinese": "起床",
+    "english": "get up",
+    "sort": 9
+  },
+  {
+    "id": "g4-lower-u07-010",
+    "unitKey": "unit7",
+    "chinese": "刷牙",
+    "english": "brush…teeth",
+    "sort": 10
+  },
+  {
+    "id": "g4-lower-u07-011",
+    "unitKey": "unit7",
+    "chinese": "……点半",
+    "english": "half past…",
+    "sort": 11
+  },
+  {
+    "id": "g4-lower-u07-012",
+    "unitKey": "unit7",
+    "chinese": "吃早餐",
+    "english": "have breakfast",
+    "sort": 12
+  },
+  {
+    "id": "g4-lower-u07-013",
+    "unitKey": "unit7",
+    "chinese": "去上学",
+    "english": "go to school",
+    "sort": 13
+  },
+  {
+    "id": "g4-lower-u07-014",
+    "unitKey": "unit7",
+    "chinese": "洗脸",
+    "english": "wash…face",
+    "sort": 14
+  },
+  {
+    "id": "g4-lower-u07-015",
+    "unitKey": "unit7",
+    "chinese": "吃午餐",
+    "english": "have lunch",
+    "sort": 15
+  },
+  {
+    "id": "g4-lower-u07-016",
+    "unitKey": "unit7",
+    "chinese": "吃晚餐",
+    "english": "have dinner",
+    "sort": 16
+  },
+  {
+    "id": "g4-lower-u07-017",
+    "unitKey": "unit7",
+    "chinese": "上床睡觉",
+    "english": "go to bed",
+    "sort": 17
+  },
+  {
+    "id": "g4-lower-u08-001",
+    "unitKey": "unit8",
+    "chinese": "星期",
+    "english": "week",
+    "sort": 1
+  },
+  {
+    "id": "g4-lower-u08-002",
+    "unitKey": "unit8",
+    "chinese": "星期一",
+    "english": "Monday",
+    "sort": 2
+  },
+  {
+    "id": "g4-lower-u08-003",
+    "unitKey": "unit8",
+    "chinese": "和……一起",
+    "english": "with",
+    "sort": 3
+  },
+  {
+    "id": "g4-lower-u08-004",
+    "unitKey": "unit8",
+    "chinese": "星期二",
+    "english": "Tuesday",
+    "sort": 4
+  },
+  {
+    "id": "g4-lower-u08-005",
+    "unitKey": "unit8",
+    "chinese": "星期三",
+    "english": "Wednesday",
+    "sort": 5
+  },
+  {
+    "id": "g4-lower-u08-006",
+    "unitKey": "unit8",
+    "chinese": "星期四",
+    "english": "Thursday",
+    "sort": 6
+  },
+  {
+    "id": "g4-lower-u08-007",
+    "unitKey": "unit8",
+    "chinese": "星期五",
+    "english": "Friday",
+    "sort": 7
+  },
+  {
+    "id": "g4-lower-u08-008",
+    "unitKey": "unit8",
+    "chinese": "游戏",
+    "english": "game",
+    "sort": 8
+  },
+  {
+    "id": "g4-lower-u08-009",
+    "unitKey": "unit8",
+    "chinese": "星期六",
+    "english": "Saturday",
+    "sort": 9
+  },
+  {
+    "id": "g4-lower-u08-010",
+    "unitKey": "unit8",
+    "chinese": "星期天",
+    "english": "Sunday",
+    "sort": 10
+  },
+  {
+    "id": "g4-lower-u08-011",
+    "unitKey": "unit8",
+    "chinese": "时钟；钟",
+    "english": "clock",
+    "sort": 11
+  },
+  {
+    "id": "g4-lower-u08-012",
+    "unitKey": "unit8",
+    "chinese": "下国际象棋",
+    "english": "play chess",
+    "sort": 12
+  },
+  {
+    "id": "g4-lower-u08-013",
+    "unitKey": "unit8",
+    "chinese": "在周末",
+    "english": "at the weekend",
+    "sort": 13
+  },
+  {
+    "id": "g4-lower-u08-014",
+    "unitKey": "unit8",
+    "chinese": "迟到",
+    "english": "(be) late for",
+    "sort": 14
+  },
+  {
+    "id": "g4-lower-u09-001",
+    "unitKey": "unit9",
+    "chinese": "中国",
+    "english": "China",
+    "sort": 1
+  },
+  {
+    "id": "g4-lower-u09-002",
+    "unitKey": "unit9",
+    "chinese": "谈话；说话",
+    "english": "talk",
+    "sort": 2
+  },
+  {
+    "id": "g4-lower-u09-003",
+    "unitKey": "unit9",
+    "chinese": "五月",
+    "english": "May",
+    "sort": 3
+  },
+  {
+    "id": "g4-lower-u09-004",
+    "unitKey": "unit9",
+    "chinese": "六月",
+    "english": "June",
+    "sort": 4
+  },
+  {
+    "id": "g4-lower-u09-005",
+    "unitKey": "unit9",
+    "chinese": "一月",
+    "english": "January",
+    "sort": 5
+  },
+  {
+    "id": "g4-lower-u09-006",
+    "unitKey": "unit9",
+    "chinese": "二月",
+    "english": "February",
+    "sort": 6
+  },
+  {
+    "id": "g4-lower-u09-007",
+    "unitKey": "unit9",
+    "chinese": "三月",
+    "english": "March",
+    "sort": 7
+  },
+  {
+    "id": "g4-lower-u09-008",
+    "unitKey": "unit9",
+    "chinese": "四月",
+    "english": "April",
+    "sort": 8
+  },
+  {
+    "id": "g4-lower-u09-009",
+    "unitKey": "unit9",
+    "chinese": "七月",
+    "english": "July",
+    "sort": 9
+  },
+  {
+    "id": "g4-lower-u09-010",
+    "unitKey": "unit9",
+    "chinese": "八月",
+    "english": "August",
+    "sort": 10
+  },
+  {
+    "id": "g4-lower-u09-011",
+    "unitKey": "unit9",
+    "chinese": "九月",
+    "english": "September",
+    "sort": 11
+  },
+  {
+    "id": "g4-lower-u09-012",
+    "unitKey": "unit9",
+    "chinese": "十月",
+    "english": "October",
+    "sort": 12
+  },
+  {
+    "id": "g4-lower-u09-013",
+    "unitKey": "unit9",
+    "chinese": "十一月",
+    "english": "November",
+    "sort": 13
+  },
+  {
+    "id": "g4-lower-u09-014",
+    "unitKey": "unit9",
+    "chinese": "十二月",
+    "english": "December",
+    "sort": 14
+  },
+  {
+    "id": "g4-lower-u09-015",
+    "unitKey": "unit9",
+    "chinese": "电子邮件",
+    "english": "email",
+    "sort": 15
+  },
+  {
+    "id": "g4-lower-u09-016",
+    "unitKey": "unit9",
+    "chinese": "帽子",
+    "english": "hat",
+    "sort": 16
+  },
+  {
+    "id": "g4-lower-u09-017",
+    "unitKey": "unit9",
+    "chinese": "穿；戴",
+    "english": "wear",
+    "sort": 17
+  },
+  {
+    "id": "g4-lower-u09-018",
+    "unitKey": "unit9",
+    "chinese": "你的；你们的",
+    "english": "yours",
+    "sort": 18
+  },
+  {
+    "id": "g4-lower-u09-019",
+    "unitKey": "unit9",
+    "chinese": "每年",
+    "english": "every year",
+    "sort": 19
+  },
+  {
+    "id": "g4-lower-u10-001",
+    "unitKey": "unit10",
+    "chinese": "花园",
+    "english": "garden",
+    "sort": 1
+  },
+  {
+    "id": "g4-lower-u10-002",
+    "unitKey": "unit10",
+    "chinese": "植物",
+    "english": "plant",
+    "sort": 2
+  },
+  {
+    "id": "g4-lower-u10-003",
+    "unitKey": "unit10",
+    "chinese": "叶子（复数leaves）",
+    "english": "leaf",
+    "sort": 3
+  },
+  {
+    "id": "g4-lower-u10-004",
+    "unitKey": "unit10",
+    "chinese": "给……浇水",
+    "english": "water",
+    "sort": 4
+  },
+  {
+    "id": "g4-lower-u10-005",
+    "unitKey": "unit10",
+    "chinese": "它们；他们；她们",
+    "english": "them",
+    "sort": 5
+  },
+  {
+    "id": "g4-lower-u10-006",
+    "unitKey": "unit10",
+    "chinese": "（使）生长；成长",
+    "english": "grow",
+    "sort": 6
+  },
+  {
+    "id": "g4-lower-u10-007",
+    "unitKey": "unit10",
+    "chinese": "种子",
+    "english": "seed",
+    "sort": 7
+  },
+  {
+    "id": "g4-lower-u10-008",
+    "unitKey": "unit10",
+    "chinese": "每天",
+    "english": "every day",
+    "sort": 8
+  },
+  {
+    "id": "g4-lower-u11-001",
+    "unitKey": "unit11",
+    "chinese": "歌曲",
+    "english": "song",
+    "sort": 1
+  },
+  {
+    "id": "g4-lower-u11-002",
+    "unitKey": "unit11",
+    "chinese": "动物园",
+    "english": "zoo",
+    "sort": 2
+  },
+  {
+    "id": "g4-lower-u11-003",
+    "unitKey": "unit11",
+    "chinese": "电影院",
+    "english": "cinema",
+    "sort": 3
+  },
+  {
+    "id": "g4-lower-u11-004",
+    "unitKey": "unit11",
+    "chinese": "博物馆",
+    "english": "museum",
+    "sort": 4
+  },
+  {
+    "id": "g4-lower-u11-005",
+    "unitKey": "unit11",
+    "chinese": "也；还",
+    "english": "also",
+    "sort": 5
+  },
+  {
+    "id": "g4-lower-u11-006",
+    "unitKey": "unit11",
+    "chinese": "举办聚会",
+    "english": "have a party",
+    "sort": 6
+  },
+  {
+    "id": "g4-lower-u12-001",
+    "unitKey": "unit12",
+    "chinese": "丑的；丑陋的",
+    "english": "ugly",
+    "sort": 1
+  },
+  {
+    "id": "g4-lower-u12-002",
+    "unitKey": "unit12",
+    "chinese": "小鸭",
+    "english": "duckling",
+    "sort": 2
+  },
+  {
+    "id": "g4-lower-u12-003",
+    "unitKey": "unit12",
+    "chinese": "鸭子",
+    "english": "duck",
+    "sort": 3
+  },
+  {
+    "id": "g4-lower-u12-004",
+    "unitKey": "unit12",
+    "chinese": "河；江",
+    "english": "river",
+    "sort": 4
+  },
+  {
+    "id": "g4-lower-u12-005",
+    "unitKey": "unit12",
+    "chinese": "宝宝；婴儿",
+    "english": "baby",
+    "sort": 5
+  },
+  {
+    "id": "g4-lower-u12-006",
+    "unitKey": "unit12",
+    "chinese": "后来；以后",
+    "english": "later",
+    "sort": 6
+  },
+  {
+    "id": "g4-lower-u12-007",
+    "unitKey": "unit12",
+    "chinese": "（鸭叫声）嘎嘎",
+    "english": "quack",
+    "sort": 7
+  },
+  {
+    "id": "g4-lower-u12-008",
+    "unitKey": "unit12",
+    "chinese": "背；背部",
+    "english": "back",
+    "sort": 8
+  },
+  {
+    "id": "g4-lower-u12-009",
+    "unitKey": "unit12",
+    "chinese": "去别处；朝另一个方向",
+    "english": "away",
+    "sort": 9
+  },
+  {
+    "id": "g4-lower-u12-010",
+    "unitKey": "unit12",
+    "chinese": "天鹅",
+    "english": "swan",
+    "sort": 10
+  },
+  {
+    "id": "g4-lower-u12-011",
+    "unitKey": "unit12",
+    "chinese": "朝；向；到……里面",
+    "english": "into",
+    "sort": 11
+  }
+]

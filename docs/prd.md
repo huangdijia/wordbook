@@ -67,7 +67,7 @@
 
 ### 5.3 场景三：家长更新词库
 
-家长根据学校教材内容，直接修改 `words.json`，新增或调整单词。页面无需重新开发，刷新后即可使用新词库。
+家长根据学校教材内容，直接修改 `data/words/` 下对应册次的词库 JSON，新增或调整单词。页面无需重新开发，刷新后即可使用新词库。
 
 ---
 
@@ -78,7 +78,7 @@
 | 模块 | 功能 | 优先级 |
 |---|---|---|
 | 配置读取 | 读取 `config.json` | P0 |
-| 词库读取 | 读取 `words.json` | P0 |
+| 词库读取 | 读取按册次拆分的词库 JSON | P0 |
 | 年级选择 | 支持选择不同年级 | P0 |
 | 单元选择 | 支持选择不同单元 | P0 |
 | 模式选择 | 支持顺序 / 随机模式 | P0 |
@@ -168,14 +168,13 @@
 
 ### 功能说明
 
-系统通过 `words.json` 管理具体单词数据。词库文件只保存单词内容，不保存页面配置。
+系统通过 `data/words/` 下的按册次 JSON 文件管理具体单词数据。词库文件只保存单词内容，不保存页面配置。
 
 ### 字段设计
 
 | 字段 | 类型 | 必填 | 说明 | 示例 |
 |---|---|---|---|---|
 | id | string | 是 | 单词唯一 ID | g3-u1-001 |
-| gradeKey | string | 是 | 所属年级 Key | grade3 |
 | unitKey | string | 是 | 所属单元 Key | unit1 |
 | chinese | string | 是 | 中文含义 | 苹果 |
 | english | string | 是 | 英文单词 | apple |
@@ -187,7 +186,6 @@
 [
   {
     "id": "g3-u1-001",
-    "gradeKey": "grade3",
     "unitKey": "unit1",
     "chinese": "苹果",
     "english": "apple",
@@ -195,7 +193,6 @@
   },
   {
     "id": "g3-u1-002",
-    "gradeKey": "grade3",
     "unitKey": "unit1",
     "chinese": "香蕉",
     "english": "banana",
@@ -237,7 +234,7 @@
 ### 规则
 
 1. 单元选项来自当前年级的 `units`。
-2. 切换单元后，根据 `gradeKey` 和 `unitKey` 筛选词库。
+2. 切换单元后，在当前册词库中根据 `unitKey` 筛选单词。
 3. 切换单元后，当前卡片重置为第一个单词。
 4. 如果当前单元没有单词，需要显示空状态。
 
@@ -260,7 +257,7 @@
 
 ### 顺序模式
 
-按照 `words.json` 中的 `sort` 字段升序展示。
+按照当前册词库中的 `sort` 字段升序展示。
 
 示例：
 
@@ -381,7 +378,7 @@ apple
 ### 展示文案
 
 ```text
-当前单元暂无单词，请检查 words.json 配置。
+当前单元暂无单词，请检查当前册词库配置。
 ```
 
 ### 规则
@@ -438,7 +435,7 @@ apple
   ↓
 加载 config.json
   ↓
-加载 words.json
+加载当前册词库 JSON
   ↓
 读取默认年级和默认模式
   ↓
@@ -533,7 +530,9 @@ wordbook/
 │       └── app.js
 └── data/
     ├── config.json
-    └── words.json
+    └── words/
+        ├── grade_1a.json
+        └── grade_1b.json
 ```
 
 ---
@@ -554,18 +553,17 @@ wordbook/
 
 ---
 
-## 10.3 words.json 职责
+## 10.3 按册次词库职责
 
-`words.json` 负责：
+`data/words/` 下的按册次词库文件负责：
 
 1. 单词唯一 ID。
-2. 所属年级。
-3. 所属单元。
-4. 中文含义。
-5. 英文单词。
-6. 展示排序。
+2. 所属单元。
+3. 中文含义。
+4. 英文单词。
+5. 展示排序。
 
-`words.json` 不负责保存页面标题、模式配置、年级名称、单元名称。
+按册次词库文件不负责保存页面标题、模式配置、年级名称、册别名称、单元名称。
 
 ---
 
@@ -573,10 +571,8 @@ wordbook/
 
 ```text
 config.json
-  grades[].key  ─────┐
-                     ├── words.json 中的 gradeKey
-config.json
-  grades[].units[].key ─ words.json 中的 unitKey
+  grades[].volumes[].wordsFile ─ 当前册次词库文件
+  grades[].volumes[].units[].key ─ 当前册词库中的 unitKey
 ```
 
 示例：
@@ -600,7 +596,6 @@ config.json
 ```json
 {
   "id": "g3-u1-001",
-  "gradeKey": "grade3",
   "unitKey": "unit1",
   "chinese": "苹果",
   "english": "apple",
@@ -654,9 +649,9 @@ const state = {
 ## 12.1 筛选当前单元单词
 
 ```js
-function getWordsByGradeAndUnit(words, gradeKey, unitKey) {
+function getWordsByUnit(words, unitKey) {
   return words
-    .filter(word => word.gradeKey === gradeKey && word.unitKey === unitKey)
+    .filter(word => word.unitKey === unitKey)
     .sort((a, b) => a.sort - b.sort)
 }
 ```
@@ -676,8 +671,8 @@ function shuffleWords(words) {
 ## 12.3 生成练习列表
 
 ```js
-function buildPracticeWords(words, gradeKey, unitKey, mode) {
-  const selectedWords = getWordsByGradeAndUnit(words, gradeKey, unitKey)
+function buildPracticeWords(words, unitKey, mode) {
+  const selectedWords = getWordsByUnit(words, unitKey)
 
   if (mode === 'random') {
     return shuffleWords(selectedWords)
@@ -705,7 +700,7 @@ function goToWord(index) {
 | 场景 | 处理方式 |
 |---|---|
 | `config.json` 加载失败 | 显示「配置文件加载失败，请检查 data/config.json」 |
-| `words.json` 加载失败 | 显示「词库文件加载失败，请检查 data/words.json」 |
+| 当前册词库加载失败 | 显示「词库文件加载失败，请检查 data/words/grade_1a.json」等具体文件路径 |
 | 当前年级不存在 | 默认选中第一个年级 |
 | 当前单元不存在 | 默认选中当前年级第一个单元 |
 | 当前单元无单词 | 显示空状态 |
@@ -781,7 +776,7 @@ http://localhost:8080
 |---|---|---|
 | A001 | 页面可以正常打开 | 显示标题、副标题、年级、单元、模式和卡片 |
 | A002 | 可以读取 `config.json` | 年级、单元、模式正确展示 |
-| A003 | 可以读取 `words.json` | 当前单元单词正确展示 |
+| A003 | 可以读取当前册词库 JSON | 当前单元单词正确展示 |
 | A004 | 默认显示中文 | 卡片初始展示中文 |
 | A005 | 点击卡片显示英文 | 卡片翻转后展示英文 |
 | A006 | 再次点击卡片显示中文 | 卡片恢复中文 |
@@ -800,8 +795,8 @@ http://localhost:8080
 
 | 编号 | 验收项 | 预期结果 |
 |---|---|---|
-| D001 | `config.json` 和 `words.json` 分离 | 配置和词库互不混杂 |
-| D002 | 词库通过 `gradeKey` 关联年级 | 能正确筛选年级 |
+| D001 | `config.json` 和按册次词库 JSON 分离 | 配置和词库互不混杂 |
+| D002 | `wordsFile` 关联到当前册词库 | 能正确切换年级和册别 |
 | D003 | 词库通过 `unitKey` 关联单元 | 能正确筛选单元 |
 | D004 | `sort` 字段有效 | 顺序模式按排序展示 |
 | D005 | 新增单词后刷新页面 | 新单词可正常展示 |
@@ -874,12 +869,12 @@ data/
     └── grade4-unit2.json
 ```
 
-第一版建议先使用单个 `words.json`，实现简单，维护成本低。
+当前实现按册次拆分词库，例如 `grade_1a.json` 表示一年级上册，`grade_1b.json` 表示一年级下册。
 
 ---
 
 ## 19. 总结
 
-英文单词本第一版采用纯静态网页实现，通过 `config.json` 管理页面配置、年级、单元和模式，通过 `words.json` 管理具体词库。孩子选择年级和单元后，以中文卡片开始练习，点击卡片翻转显示英文，并支持顺序和随机两种模式。
+英文单词本第一版采用纯静态网页实现，通过 `config.json` 管理页面配置、年级、单元和模式，通过 `data/words/` 下的按册次 JSON 管理具体词库。孩子选择年级和单元后，以中文卡片开始练习，点击卡片翻转显示英文，并支持顺序和随机两种模式。
 
 该方案实现成本低、维护简单、部署方便，适合作为家庭自用或小规模学习工具的 MVP。

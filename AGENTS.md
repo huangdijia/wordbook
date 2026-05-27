@@ -8,7 +8,7 @@
 - 交互逻辑：`assets/js/app.js`
 - 样式：`assets/css/style.css`
 - 应用配置：`data/config.json`
-- 词库数据：`data/words.json`
+- 词库数据：`data/words/*.json`
 - PWA 配置：`manifest.webmanifest`、`sw.js`
 - 产品与拆分文档：`docs/prd.md`、`docs/spec-plan.md`
 
@@ -24,18 +24,15 @@
 `data/config.json` 负责应用配置、年级、册别、单元和练习模式：
 
 - `app.defaultGrade`、`app.defaultVolume`、`app.defaultMode` 是默认入口配置。
-- `grades[].key` 与词库中的 `gradeKey` 必须一致。
-- `grades[].volumes[].key` 与词库中的 `volumeKey` 必须一致。
+- `grades[].volumes[].wordsFile` 指向当前册次的词库文件。
 - `grades[].volumes[].units[].key` 与词库中的 `unitKey` 必须一致。
 - `modes[].key` 当前只应使用已有的 `sequence` 和 `random`，除非任务明确要求扩展模式。
 
-`data/words.json` 是词库数组，每个单词必须包含：
+`data/words/` 下的按册次词库文件是词库数组，例如 `grade_1a.json` 表示一年级上册，`grade_1b.json` 表示一年级下册。每个单词必须包含：
 
 ```json
 {
   "id": "g1-upper-u01-001",
-  "gradeKey": "grade1",
-  "volumeKey": "upper",
   "unitKey": "unit1",
   "chinese": "喂，你好",
   "english": "hello",
@@ -43,7 +40,7 @@
 }
 ```
 
-维护词库时优先追加或修正具体条目，避免全文件格式化造成巨大 diff。`sort` 控制顺序模式展示顺序，同一单元内应从 1 开始递增。
+维护词库时优先追加或修正具体册次文件中的条目，避免无关文件格式化造成巨大 diff。`sort` 控制顺序模式展示顺序，同一单元内应从 1 开始递增。
 
 ## 前端实现约定
 
@@ -81,7 +78,7 @@ python3 -m http.server 8080
 
 ```bash
 python3 -m json.tool data/config.json >/dev/null
-python3 -m json.tool data/words.json >/dev/null
+for f in data/words/*.json; do python3 -m json.tool "$f" >/dev/null; done
 ```
 
 如果改动部署流程，同时检查 `.github/workflows/deploy-vercel.yml`。该项目当前通过 GitHub Actions 安装 Vercel CLI 并部署到 Vercel。
