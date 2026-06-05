@@ -69,6 +69,7 @@ http://localhost:8080
   "unitKey": "unit1",
   "chinese": "喂，你好",
   "english": "hello",
+  "phonetic": "/həˈləʊ/",
   "sort": 1
 }
 ```
@@ -81,6 +82,7 @@ http://localhost:8080
 | `unitKey` | 所属单元，对应 `config.json` 中的单元 `key` |
 | `chinese` | 卡片正面显示的中文释义 |
 | `english` | 卡片翻转后显示的英文 |
+| `phonetic` | 可选，英文下方显示的音标 |
 | `sort` | 顺序模式下的排序值 |
 
 修改数据后可运行：

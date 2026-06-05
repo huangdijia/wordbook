@@ -37,6 +37,7 @@ const elements = {
   cardFrontMain: document.querySelector('#card-front-main'),
   cardFrontHint: document.querySelector('#card-front-hint'),
   cardBackMain: document.querySelector('#card-back-main'),
+  cardBackPhonetic: document.querySelector('#card-back-phonetic'),
   cardBackHint: document.querySelector('#card-back-hint'),
   prevButton: document.querySelector('#prev-button'),
   nextButton: document.querySelector('#next-button'),
@@ -366,6 +367,8 @@ function renderCard() {
     elements.cardFrontMain.textContent = '加载中...'
     elements.cardFrontHint.textContent = '请稍候'
     elements.cardBackMain.textContent = 'Loading...'
+    elements.cardBackPhonetic.hidden = true
+    elements.cardBackPhonetic.textContent = ''
     elements.cardBackHint.textContent = '请稍候'
     return
   }
@@ -374,6 +377,8 @@ function renderCard() {
     elements.cardFrontMain.textContent = '加载失败'
     elements.cardFrontHint.textContent = '请检查数据文件'
     elements.cardBackMain.textContent = 'Error'
+    elements.cardBackPhonetic.hidden = true
+    elements.cardBackPhonetic.textContent = ''
     elements.cardBackHint.textContent = '请检查数据文件'
     return
   }
@@ -382,6 +387,8 @@ function renderCard() {
     elements.cardFrontMain.textContent = '暂无单词'
     elements.cardFrontHint.textContent = '请选择其他年级或单元'
     elements.cardBackMain.textContent = 'No words'
+    elements.cardBackPhonetic.hidden = true
+    elements.cardBackPhonetic.textContent = ''
     elements.cardBackHint.textContent = '请选择其他年级或单元'
     return
   }
@@ -389,6 +396,8 @@ function renderCard() {
   elements.cardFrontMain.textContent = currentWord.chinese
   elements.cardFrontHint.textContent = '点击查看英文'
   elements.cardBackMain.textContent = currentWord.english
+  elements.cardBackPhonetic.hidden = !currentWord.phonetic
+  elements.cardBackPhonetic.textContent = currentWord.phonetic || ''
   elements.cardBackHint.textContent = '点击返回中文'
 }
 

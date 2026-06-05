@@ -413,6 +413,19 @@ button:focus-visible {
   font-size: clamp(2.6rem, 11vw, 4.4rem);
 }
 
+.card-back-content {
+  display: grid;
+  place-items: center;
+  gap: 10px;
+}
+
+.card-phonetic {
+  color: var(--muted);
+  font-size: clamp(1.2rem, 4vw, 1.55rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
 .card-hint {
   position: absolute;
   right: 18px;

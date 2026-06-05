@@ -4,6 +4,7 @@
     "unitKey": "unit1",
     "chinese": "喂，你好",
     "english": "hello",
+    "phonetic": "/həˈləʊ/",
     "sort": 1
   },
   {
@@ -11,6 +12,7 @@
     "unitKey": "unit1",
     "chinese": "嗨，你好",
     "english": "hi",
+    "phonetic": "/haɪ/",
     "sort": 2
   },
   {
@@ -18,6 +20,7 @@
     "unitKey": "unit1",
     "chinese": "再见",
     "english": "goodbye",
+    "phonetic": "/ˌɡʊdˈbaɪ/",
     "sort": 3
   },
   {
@@ -25,6 +28,7 @@
     "unitKey": "unit1",
     "chinese": "早上；上午",
     "english": "morning",
+    "phonetic": "/ˈmɔːnɪŋ/",
     "sort": 4
   },
   {
@@ -32,6 +36,7 @@
     "unitKey": "unit1",
     "chinese": "下午",
     "english": "afternoon",
+    "phonetic": "/ˌɑːftəˈnuːn/",
     "sort": 5
   },
   {
@@ -39,6 +44,7 @@
     "unitKey": "unit1",
     "chinese": "我",
     "english": "I",
+    "phonetic": "/aɪ/",
     "sort": 6
   },
   {
@@ -46,6 +52,7 @@
     "unitKey": "unit1",
     "chinese": "是",
     "english": "am",
+    "phonetic": "/æm/",
     "sort": 7
   },
   {
@@ -53,6 +60,7 @@
     "unitKey": "unit1",
     "chinese": "学校",
     "english": "school",
+    "phonetic": "/skuːl/",
     "sort": 8
   },
   {
@@ -60,6 +68,7 @@
     "unitKey": "unit1",
     "chinese": "一天；一日",
     "english": "day",
+    "phonetic": "/deɪ/",
     "sort": 9
   },
   {
