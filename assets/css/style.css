@@ -322,6 +322,9 @@ button:focus-visible {
 }
 
 .word-card {
+  --card-lift: translateY(0) rotate(0);
+  --card-flip: rotateY(0);
+  --card-shadow: 0 16px 36px rgba(37, 49, 77, 0.14);
   position: relative;
   display: grid;
   place-items: center;
@@ -331,15 +334,13 @@ button:focus-visible {
   border-radius: var(--radius);
   color: var(--ink);
   background: transparent;
-  box-shadow: 0 16px 36px rgba(37, 49, 77, 0.14);
   cursor: pointer;
   perspective: 1200px;
-  transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
 .word-card:not(:disabled):hover {
-  transform: translateY(-3px) rotate(-0.3deg);
-  box-shadow: 0 20px 44px rgba(37, 49, 77, 0.2);
+  --card-lift: translateY(-3px) rotate(-0.3deg);
+  --card-shadow: 0 20px 44px rgba(37, 49, 77, 0.2);
 }
 
 .word-card:disabled {
@@ -352,12 +353,16 @@ button:focus-visible {
   inset: 0;
   display: block;
   border-radius: inherit;
+  box-shadow: var(--card-shadow);
   transform-style: preserve-3d;
-  transition: transform 560ms cubic-bezier(0.2, 0.75, 0.2, 1.1);
+  transform: var(--card-lift) var(--card-flip);
+  transition:
+    transform 560ms cubic-bezier(0.2, 0.75, 0.2, 1.1),
+    box-shadow 180ms ease;
 }
 
 .word-card.is-flipped .card-inner {
-  transform: rotateY(180deg);
+  --card-flip: rotateY(180deg);
 }
 
 .card-side {
@@ -366,7 +371,9 @@ button:focus-visible {
   display: grid;
   place-items: center;
   overflow: hidden;
+  border: 3px solid var(--sky);
   border-radius: inherit;
+  background: var(--card);
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
